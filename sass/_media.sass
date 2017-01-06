@@ -1,0 +1,656 @@
+@import "bourbon"
+
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1700px)
+	.top-panel
+		top: 20px
+		right: 50px
+		left: inherit
+	.owl-container
+		width: 620px
+	.header 
+		.title-container 
+			height: 183px
+			padding: 62px 0 0
+			margin-bottom: 35px
+			.title
+				font-size: 73px
+			.aside
+				font-size: 22px
+		.slider 
+			.owl-title
+				font-size: 29px
+				line-height: 40px
+				h2
+					float: right
+			.owl-item 
+				.owl-wrap
+					width: 206px
+					&:after
+						transform: scale(0.7)
+						top: -13px
+						right: -75px
+					.text
+						line-height: 27px
+						font-size: 20px
+				.img-container
+					.hover 
+						span
+							width: 160px
+							padding: 5px 20px
+
+			.owl-controls
+				top: 149px
+				left: -152px
+				top: calc(50% - 3px)
+				&:before,
+				&:after
+					width: 39px
+				&:after
+					right: -49px
+				&:before	
+					left: -48px
+			.owl-dot
+				width: 14px
+				height: 14px
+
+		.wrap-position
+			top: calc(50% - 224px)
+
+
+	.about-us 
+		.title-container
+			height: 125px
+			padding: 50px 0 0
+			margin: 0 0 60px	
+			.title
+				font-size: 30px
+		.content	
+			font-size: 17px
+	.service 
+		.title
+			font-size: 25px
+			margin-bottom: 37px
+		.content 
+			top: calc(50% - 293px)
+			.wrap
+				margin-bottom: 55px
+			.icon
+				transform: scale(0.7)
+			.text
+				font-size: 17px
+			.item
+				min-height: 122px
+				margin-bottom: 18px
+				line-height: 23px
+		.link-give
+			padding: 11px 77px	
+			font-size: 20px
+			&:before
+				transform: scale(0.8)
+				top: -33px
+				left: 10px
+			&:hover
+				&:before
+					top: -21px
+					left: -3px
+	.person-1,
+	.person-2 
+		.about-person 
+			.content
+				top: calc(50% - 294px)
+			.title-container
+				margin-bottom: 41px
+				height: 123px
+			.about-skill 
+				margin-bottom: 40px	
+				.title-skill
+					margin-bottom: 13px
+	.video-section 
+		.title-container
+			height: 120px
+			width: 593pxi
+			padding: 42px 0 0
+			margin-bottom: 40px
+			width: 542px
+			.title
+				font-size: 31px
+		.container
+			margin-bottom: 30px
+		.video-container
+			.wrap
+				height: 280px
+
+
+	.comments-section 
+		.title-container 
+			padding: 42px 0 0
+			height: 106px
+			width: 542px
+			.title
+				font-size: 31px
+		.intent
+			margin-top: 30px
+		.comments-wrap
+			line-height: 22px
+			padding: 29px 32px
+
+	.footer 
+		.title-container
+			padding: 41px 0 0
+			height: 110px
+			width: 455px
+			.title
+				font-size: 26px
+		.maps
+			height: 350px
+			width: 509px
+		.aside
+			margin-bottom: 20px
+			margin-top: 18px
+		.contacts-container
+			padding-left: 40px	
+		.contacts-container 
+			.email,
+			.phone,
+			.street,
+			.time
+				margin-bottom: 10px
+				.text
+					font-size: 17px	
+				.icon
+					font-size: 16px
+			.links
+				margin-top: 18px
+				.icon
+					transform: scale(0.8)
+
+	.footer 
+		.footer-row
+			padding: 15px 0 0
+@media only screen and (max-width : 1366px)
+	.mobile-intent
+		padding-top: 10px
+	.video-section,
+	.comments-section,
+	.footer
+		.title-2
+			padding-top: 10px
+	.comments-section 
+		.intent
+			margin-bottom: 10px
+	.footer 
+		.footer-row
+			padding-bottom: 20px
+@media only screen and (max-width : 1200px)
+	/**/
+	// для фиксированного сайта
+	// body
+	// 	width: 1200px
+	
+	.header_modal
+		margin-top: 20px
+	.intermediate
+		.intermediate_wrap
+			margin-bottom: 20px
+			.intermediate_item
+				display: block
+				margin: 30px auto 30px
+			.modal_form_input_wrap
+				display: inline-block
+	.wrap-container
+		height: auto
+		margin-bottom: 55px	
+	.section 
+		min-height: 670px
+	.owl-container
+		width: 580px
+	.header
+		height: auto
+		.slider 
+			.owl-controls
+				left: -194px
+			.owl-title
+				padding-right: 50px
+			.owl-item
+				.owl-wrap
+					width: 180px
+
+	.title-2	
+		padding-top: 55px
+	.about-us 
+		.content	
+			padding-bottom: 70px	
+	.service
+		min-height: inherit
+		.service_1,
+		.service_2,
+		.service_3
+			padding: 50px 10px
+			height: auto
+			display: flex
+			flex-wrap: wrap
+			margin: -1px
+			.content
+				position: static
+				display: flex
+				flex-direction: column
+		.link-give
+			margin-top: auto
+			margin-right: auto
+			margin-left: auto
+			&:before
+				left: 5px
+		.title
+			font-size: 18px
+			p	
+				display: inline
+		.service-container
+			display: flex
+
+	.person-1,
+	.person-2 
+		.about-person
+			.content
+				right: inherit
+				padding: 15px
+				.title
+					font-size: 30px
+		.about-person,
+		.photo-person
+			min-height: 700px
+			height: auto
+	.person-2 
+		.content
+			left: 0
+	.comments-section 
+		.intent
+			margin-bottom: 50px
+	
+	.footer 
+		.footer-row
+			padding: 15px 0
+		.maps
+			width: 100%
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	/**/
+	.top-panel
+		display: none
+	.button-mobile-menu
+		display: block
+	.mobile-menu
+		display: block
+	.header_nav
+		display: none
+	.header_logo
+		display: block
+	.header_modal
+		margin-top: 40px
+	nav[canvas]
+		display: block		
+
+	.owl-container	
+		margin: auto
+
+	.header 	
+		min-height: 940px
+		.title-container 
+			.title
+				font-size: 60px
+		.slider
+			.owl-controls
+				left: 238px
+				top: -66px
+			.owl-title
+				margin-bottom: 85px
+				h2
+					float: none
+					text-align: center
+
+	.about-us 
+		.title-container
+			margin: 0 0 43px
+			height: 101px
+			padding: 43px 0 0
+			.title
+				font-size: 24px	
+
+
+	.service 
+		.link-give
+			padding: 10px 47px
+			font-size: 18px
+			display: inline-block
+			width: 240px
+			&:before
+				left: -22px
+				transform: scale(.7)
+		.content 
+			.wrap
+				margin-top: auto
+			.text
+				font-size: 13px
+		.title
+			margin: auto
+			font-size: 18px
+	.person-1,
+	.person-2
+		.about-person
+			.content
+				width: 100%
+				.title
+					font-size: 27px
+					padding: 0 25px
+			.title-container
+				height: 110px
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 882px)
+	.service 
+		.row
+			margin: 0
+		.service-container
+			display: block
+		.service_1,
+		.service_2,
+		.service_3
+			width: 100%
+			display: block
+			flex-wrap: inherit
+		.content
+			.item
+				width: 180px
+		.col-wrap
+			display: flex
+			justify-content: center
+		.title
+			margin-bottom: 20px
+			p
+				display: block
+	.person-1, 
+	.person-2
+		.about-person,
+		.photo-person
+			min-height: 750px
+@media only screen and (max-width : 810px)
+	.person-1,
+	.person-2 
+		.about-person
+			position: absolute
+			width: 400px
+			left: -290px
+			transition: .5s
+			&.active
+				left: 0px
+		.photo-person
+			float: right
+			width: calc(100% - 100px)
+	.grow-button
+		display: block
+	
+@media only screen and (max-width : 768px)
+	.comments-section 
+		.person
+			margin-bottom: 40px
+		.intent
+			margin-bottom: 0
+	.title-2
+		text-align: center
+	.about-us 
+		.title-container
+			width: 350px
+			margin: auto
+	.header
+		min-height: 848px
+	.about-us 
+		.content
+			padding: 20px 30px 70px
+			width: 454px
+
+	.header 
+		.title-container
+			height: 141px
+			padding: 66px 0 0
+			.title
+				font-size: 48px
+			.aside
+				font-size: 17px
+	.maps-container
+		margin-bottom: 40px
+	.footer 
+		.footer-row
+			font-size: 15px
+			.company
+				text-align: center
+				margin-bottom: 10px
+			.developers
+				text-align: center
+				.footer-logo
+					right: calc(50% - 85px)
+
+
+		.footer-row
+			padding: 35px 0
+	.comments-section 
+		.title-container
+			width: 350px
+			margin: auto
+			.title
+				font-size: 21px
+	.video-section 
+		.title-container
+			width: 350px
+			margin: auto
+			.title
+				font-size: 21px
+	.footer 
+		.title-container
+			width: 350px
+			margin: auto
+			.title
+				font-size: 21px
+	.video-section 
+		.video-container 
+			.wrap
+				width: 100%
+				float: none
+	.footer 
+		.contacts-container
+			padding-left: 0
+	/*Disable Animation on Mobile Devices*/
+	.animated
+		/*CSS transitions*/
+		-o-transition-property: none !important
+		-moz-transition-property: none !important
+		-ms-transition-property: none !important
+		-webkit-transition-property: none !important
+		transition-property: none !important
+		/*CSS transforms*/
+		-o-transform: none !important
+		-moz-transform: none !important
+		-ms-transform: none !important
+		-webkit-transform: none !important
+		transform: none !important
+		/*CSS animations*/
+		-webkit-animation: none !important
+		-moz-animation: none !important
+		-o-animation: none !important
+		-ms-animation: none !important
+		animation: none !important
+	
+	.header_title
+		h1
+			font-size: 30px
+			margin-top: 40px
+	.header_modal
+		margin-top: 40px
+	[off-canvas*=left]
+		width: 255px
+@media only screen and (max-width : 646px)
+	.about-us 
+		.decor-img
+			display: none	
+		.content
+			width: 100%
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 580px)
+	.header 
+		.title-container 
+			height: 108px
+			padding: 51px 0 0
+			.title
+				font-size: 38px
+			.aside
+				font-size: 14px
+		.slider
+			.owl-item
+				.owl-wrap
+					width: 130px
+					.text
+						font-size: 17px
+					&:after
+						transform: scale(.5)
+						top: -29px
+						right: -95px
+			.owl-controls
+				left: 176px
+	.owl-container
+		width: 460px	
+@media only screen and (max-width : 520px)
+	/**/
+		
+	.dm-modal
+		width: 100%
+	.dm-modal
+		input[type=submit]
+			width: 100%
+@media only screen and (max-width : 480px)
+	/**/
+
+	.header_title
+		h1
+			font-size: 26px
+	.modal_form_input_wrap
+		.modal_input_error
+			right: 0px
+	.intermediate
+		.intermediate_title
+			h3
+				font-size: 20px
+	.header 
+		.title-container 
+			height: 97px
+			padding: 50px 0 0
+			.title
+				padding: 0 20px
+				font-size: 29px
+			.aside	
+				font-size: 12px
+@media only screen and (max-width : 460px)
+	.header
+		.slider
+			.owl-item	
+				.owl-wrap
+					width: 200px
+					margin: auto
+					&:after
+						transform: scale(.7)
+						top: -14px
+						right: -74px
+			.owl-controls
+				left: 0
+				right: 0
+				margin: auto
+				&:before
+					left: calc(50% - 118px)
+					top: calc(50% - 3px)
+				&:after
+					right: calc(50% - 119px)
+					top: calc(50% - 3px)
+
+	.owl-container
+		width: 100%
+	.person-1,
+	.person-2 
+		.about-person
+			width: 284px
+			left: -183px
+			min-height: 877px
+			.content
+				top: 40px
+				.title
+					font-size: 22px
+					padding: 0 8px
+			.title-container
+				.aside
+					padding: 0 9px
+					font-size: 15px
+		.photo-person
+			min-height: 877px
+	.dm-modal
+		padding: 50px 10px
+	.close
+		top: 10px
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 380px)
+	.about-us 
+		.title-container
+			width: 300px
+			.title
+				font-size: 20px
+		.mobile-intent
+			padding: 0
+	.comments-section,
+	.footer, 
+	.video-section 
+		.title-container
+			width: 300px
+			.title
+				font-size: 19px
+@media only screen and (max-width : 360px)
+	.header
+		.title-container
+			padding: 48px 0 0
+			.title
+				padding: 0 10px
+			.aside
+				padding: 0 5px
+			.aside-container
+				bottom: -11px
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1201px)
+	.container
+		width: 1200px
+
+
+

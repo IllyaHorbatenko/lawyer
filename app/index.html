@@ -1,0 +1,2284 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Заголовок</title>
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="shortcut icon" href="img/favicon/favicon5.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/reset .css">
+    <link rel="stylesheet" href="libs/scroll/jquery.fullPage.css">
+    <!-- Bootstrap v3.3.4 Grid Styles -->
+    <style>
+    html {
+        font-family: sans-serif;
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%
+    }
+    
+    body {
+        margin: 0
+    }
+    
+    article,
+    aside,
+    details,
+    figcaption,
+    figure,
+    footer,
+    header,
+    hgroup,
+    main,
+    menu,
+    nav,
+    section,
+    summary {
+        display: block
+    }
+    
+    audio,
+    canvas,
+    progress,
+    video {
+        display: inline-block;
+        vertical-align: baseline
+    }
+    
+    audio:not([controls]) {
+        display: none;
+        height: 0
+    }
+    
+    [hidden],
+    template {
+        display: none
+    }
+    
+    a {
+        background-color: transparent
+    }
+    
+    a:active,
+    a:hover {
+        outline: 0
+    }
+    
+    abbr[title] {
+        border-bottom: 1px dotted
+    }
+    
+    b,
+    strong {
+        font-weight: 700
+    }
+    
+    dfn {
+        font-style: italic
+    }
+    
+    h1 {
+        font-size: 2em;
+        margin: .67em 0
+    }
+    
+    mark {
+        background: #ff0;
+        color: #000
+    }
+    
+    small {
+        font-size: 80%
+    }
+    
+    sub,
+    sup {
+        font-size: 75%;
+        line-height: 0;
+        position: relative;
+        vertical-align: baseline
+    }
+    
+    sup {
+        top: -.5em
+    }
+    
+    sub {
+        bottom: -.25em
+    }
+    
+    img {
+        border: 0
+    }
+    
+    svg:not(:root) {
+        overflow: hidden
+    }
+    
+    figure {
+        margin: 1em 40px
+    }
+    
+    hr {
+        -moz-box-sizing: content-box;
+        -webkit-box-sizing: content-box;
+        box-sizing: content-box;
+        height: 0
+    }
+    
+    pre {
+        overflow: auto
+    }
+    
+    code,
+    kbd,
+    pre,
+    samp {
+        font-family: monospace, monospace;
+        font-size: 1em
+    }
+    
+    button,
+    input,
+    optgroup,
+    select,
+    textarea {
+        color: inherit;
+        font: inherit;
+        margin: 0
+    }
+    
+    button {
+        overflow: visible
+    }
+    
+    button,
+    select {
+        text-transform: none
+    }
+    
+    button,
+    html input[type="button"],
+    input[type="reset"],
+    input[type="submit"] {
+        -webkit-appearance: button;
+        cursor: pointer
+    }
+    
+    button[disabled],
+    html input[disabled] {
+        cursor: default
+    }
+    
+    button::-moz-focus-inner,
+    input::-moz-focus-inner {
+        border: 0;
+        padding: 0
+    }
+    
+    input {
+        line-height: normal
+    }
+    
+    input[type="checkbox"],
+    input[type="radio"] {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 0
+    }
+    
+    input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+        height: auto
+    }
+    
+    input[type="search"] {
+        -webkit-appearance: textfield;
+        -moz-box-sizing: content-box;
+        -webkit-box-sizing: content-box;
+        box-sizing: content-box
+    }
+    
+    input[type="search"]::-webkit-search-cancel-button,
+    input[type="search"]::-webkit-search-decoration {
+        -webkit-appearance: none
+    }
+    
+    fieldset {
+        border: 1px solid silver;
+        margin: 0 2px;
+        padding: .35em .625em .75em
+    }
+    
+    legend {
+        border: 0;
+        padding: 0
+    }
+    
+    textarea {
+        overflow: auto
+    }
+    
+    optgroup {
+        font-weight: 700
+    }
+    
+    table {
+        border-collapse: collapse;
+        border-spacing: 0
+    }
+    
+    td,
+    th {
+        padding: 0
+    }
+    
+    * {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box
+    }
+    
+    :before,
+    :after {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box
+    }
+    
+    html {
+        font-size: 10px;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+    }
+    
+    body {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        line-height: 1.42857143;
+        color: #333;
+        background-color: #fff
+    }
+    
+    input,
+    button,
+    select,
+    textarea {
+        font-family: inherit;
+        font-size: inherit;
+        line-height: inherit
+    }
+    
+    a {
+        color: #337ab7;
+        text-decoration: none
+    }
+    
+    a:hover,
+    a:focus {
+        color: #23527c;
+        text-decoration: underline
+    }
+    
+    a:focus {
+        outline: thin dotted;
+        outline: 5px auto -webkit-focus-ring-color;
+        outline-offset: -2px
+    }
+    
+    figure {
+        margin: 0
+    }
+    
+    img {
+        vertical-align: middle
+    }
+    
+    .img-responsive {
+        display: block;
+        max-width: 100%;
+        height: auto
+    }
+    
+    .img-rounded {
+        border-radius: 6px
+    }
+    
+    .img-thumbnail {
+        padding: 4px;
+        line-height: 1.42857143;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        -webkit-transition: all .2s ease-in-out;
+        -o-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out;
+        display: inline-block;
+        max-width: 100%;
+        height: auto
+    }
+    
+    .img-circle {
+        border-radius: 50%
+    }
+    
+    hr {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border: 0;
+        border-top: 1px solid #eee
+    }
+    
+    .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        padding: 0;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        border: 0
+    }
+    
+    .sr-only-focusable:active,
+    .sr-only-focusable:focus {
+        position: static;
+        width: auto;
+        height: auto;
+        margin: 0;
+        overflow: visible;
+        clip: auto
+    }
+    
+    [role="button"] {
+        cursor: pointer
+    }
+    
+    .container {
+        margin-right: auto;
+        margin-left: auto;
+        padding-left: 15px;
+        padding-right: 15px
+    }
+    
+    @media (min-width:768px) {
+        .container {
+            width: 750px
+        }
+    }
+    
+    @media (min-width:992px) {
+        .container {
+            width: 970px
+        }
+    }
+    
+    @media (min-width:1200px) {
+        .container {
+            width: 1170px
+        }
+    }
+    
+    .container-fluid {
+        margin-right: auto;
+        margin-left: auto;
+        padding-left: 15px;
+        padding-right: 15px
+    }
+    
+    .row {
+        margin-left: -15px;
+        margin-right: -15px
+    }
+    
+    .col-xs-1,
+    .col-sm-1,
+    .col-md-1,
+    .col-lg-1,
+    .col-xs-2,
+    .col-sm-2,
+    .col-md-2,
+    .col-lg-2,
+    .col-xs-3,
+    .col-sm-3,
+    .col-md-3,
+    .col-lg-3,
+    .col-xs-4,
+    .col-sm-4,
+    .col-md-4,
+    .col-lg-4,
+    .col-xs-5,
+    .col-sm-5,
+    .col-md-5,
+    .col-lg-5,
+    .col-xs-6,
+    .col-sm-6,
+    .col-md-6,
+    .col-lg-6,
+    .col-xs-7,
+    .col-sm-7,
+    .col-md-7,
+    .col-lg-7,
+    .col-xs-8,
+    .col-sm-8,
+    .col-md-8,
+    .col-lg-8,
+    .col-xs-9,
+    .col-sm-9,
+    .col-md-9,
+    .col-lg-9,
+    .col-xs-10,
+    .col-sm-10,
+    .col-md-10,
+    .col-lg-10,
+    .col-xs-11,
+    .col-sm-11,
+    .col-md-11,
+    .col-lg-11,
+    .col-xs-12,
+    .col-sm-12,
+    .col-md-12,
+    .col-lg-12 {
+        position: relative;
+        min-height: 1px;
+        padding-left: 15px;
+        padding-right: 15px
+    }
+    
+    .col-xs-1,
+    .col-xs-2,
+    .col-xs-3,
+    .col-xs-4,
+    .col-xs-5,
+    .col-xs-6,
+    .col-xs-7,
+    .col-xs-8,
+    .col-xs-9,
+    .col-xs-10,
+    .col-xs-11,
+    .col-xs-12 {
+        float: left
+    }
+    
+    .col-xs-12 {
+        width: 100%
+    }
+    
+    .col-xs-11 {
+        width: 91.66666667%
+    }
+    
+    .col-xs-10 {
+        width: 83.33333333%
+    }
+    
+    .col-xs-9 {
+        width: 75%
+    }
+    
+    .col-xs-8 {
+        width: 66.66666667%
+    }
+    
+    .col-xs-7 {
+        width: 58.33333333%
+    }
+    
+    .col-xs-6 {
+        width: 50%
+    }
+    
+    .col-xs-5 {
+        width: 41.66666667%
+    }
+    
+    .col-xs-4 {
+        width: 33.33333333%
+    }
+    
+    .col-xs-3 {
+        width: 25%
+    }
+    
+    .col-xs-2 {
+        width: 16.66666667%
+    }
+    
+    .col-xs-1 {
+        width: 8.33333333%
+    }
+    
+    .col-xs-pull-12 {
+        right: 100%
+    }
+    
+    .col-xs-pull-11 {
+        right: 91.66666667%
+    }
+    
+    .col-xs-pull-10 {
+        right: 83.33333333%
+    }
+    
+    .col-xs-pull-9 {
+        right: 75%
+    }
+    
+    .col-xs-pull-8 {
+        right: 66.66666667%
+    }
+    
+    .col-xs-pull-7 {
+        right: 58.33333333%
+    }
+    
+    .col-xs-pull-6 {
+        right: 50%
+    }
+    
+    .col-xs-pull-5 {
+        right: 41.66666667%
+    }
+    
+    .col-xs-pull-4 {
+        right: 33.33333333%
+    }
+    
+    .col-xs-pull-3 {
+        right: 25%
+    }
+    
+    .col-xs-pull-2 {
+        right: 16.66666667%
+    }
+    
+    .col-xs-pull-1 {
+        right: 8.33333333%
+    }
+    
+    .col-xs-pull-0 {
+        right: auto
+    }
+    
+    .col-xs-push-12 {
+        left: 100%
+    }
+    
+    .col-xs-push-11 {
+        left: 91.66666667%
+    }
+    
+    .col-xs-push-10 {
+        left: 83.33333333%
+    }
+    
+    .col-xs-push-9 {
+        left: 75%
+    }
+    
+    .col-xs-push-8 {
+        left: 66.66666667%
+    }
+    
+    .col-xs-push-7 {
+        left: 58.33333333%
+    }
+    
+    .col-xs-push-6 {
+        left: 50%
+    }
+    
+    .col-xs-push-5 {
+        left: 41.66666667%
+    }
+    
+    .col-xs-push-4 {
+        left: 33.33333333%
+    }
+    
+    .col-xs-push-3 {
+        left: 25%
+    }
+    
+    .col-xs-push-2 {
+        left: 16.66666667%
+    }
+    
+    .col-xs-push-1 {
+        left: 8.33333333%
+    }
+    
+    .col-xs-push-0 {
+        left: auto
+    }
+    
+    .col-xs-offset-12 {
+        margin-left: 100%
+    }
+    
+    .col-xs-offset-11 {
+        margin-left: 91.66666667%
+    }
+    
+    .col-xs-offset-10 {
+        margin-left: 83.33333333%
+    }
+    
+    .col-xs-offset-9 {
+        margin-left: 75%
+    }
+    
+    .col-xs-offset-8 {
+        margin-left: 66.66666667%
+    }
+    
+    .col-xs-offset-7 {
+        margin-left: 58.33333333%
+    }
+    
+    .col-xs-offset-6 {
+        margin-left: 50%
+    }
+    
+    .col-xs-offset-5 {
+        margin-left: 41.66666667%
+    }
+    
+    .col-xs-offset-4 {
+        margin-left: 33.33333333%
+    }
+    
+    .col-xs-offset-3 {
+        margin-left: 25%
+    }
+    
+    .col-xs-offset-2 {
+        margin-left: 16.66666667%
+    }
+    
+    .col-xs-offset-1 {
+        margin-left: 8.33333333%
+    }
+    
+    .col-xs-offset-0 {
+        margin-left: 0
+    }
+    
+    @media (min-width:768px) {
+        .col-sm-1,
+        .col-sm-2,
+        .col-sm-3,
+        .col-sm-4,
+        .col-sm-5,
+        .col-sm-6,
+        .col-sm-7,
+        .col-sm-8,
+        .col-sm-9,
+        .col-sm-10,
+        .col-sm-11,
+        .col-sm-12 {
+            float: left
+        }
+        .col-sm-12 {
+            width: 100%
+        }
+        .col-sm-11 {
+            width: 91.66666667%
+        }
+        .col-sm-10 {
+            width: 83.33333333%
+        }
+        .col-sm-9 {
+            width: 75%
+        }
+        .col-sm-8 {
+            width: 66.66666667%
+        }
+        .col-sm-7 {
+            width: 58.33333333%
+        }
+        .col-sm-6 {
+            width: 50%
+        }
+        .col-sm-5 {
+            width: 41.66666667%
+        }
+        .col-sm-4 {
+            width: 33.33333333%
+        }
+        .col-sm-3 {
+            width: 25%
+        }
+        .col-sm-2 {
+            width: 16.66666667%
+        }
+        .col-sm-1 {
+            width: 8.33333333%
+        }
+        .col-sm-pull-12 {
+            right: 100%
+        }
+        .col-sm-pull-11 {
+            right: 91.66666667%
+        }
+        .col-sm-pull-10 {
+            right: 83.33333333%
+        }
+        .col-sm-pull-9 {
+            right: 75%
+        }
+        .col-sm-pull-8 {
+            right: 66.66666667%
+        }
+        .col-sm-pull-7 {
+            right: 58.33333333%
+        }
+        .col-sm-pull-6 {
+            right: 50%
+        }
+        .col-sm-pull-5 {
+            right: 41.66666667%
+        }
+        .col-sm-pull-4 {
+            right: 33.33333333%
+        }
+        .col-sm-pull-3 {
+            right: 25%
+        }
+        .col-sm-pull-2 {
+            right: 16.66666667%
+        }
+        .col-sm-pull-1 {
+            right: 8.33333333%
+        }
+        .col-sm-pull-0 {
+            right: auto
+        }
+        .col-sm-push-12 {
+            left: 100%
+        }
+        .col-sm-push-11 {
+            left: 91.66666667%
+        }
+        .col-sm-push-10 {
+            left: 83.33333333%
+        }
+        .col-sm-push-9 {
+            left: 75%
+        }
+        .col-sm-push-8 {
+            left: 66.66666667%
+        }
+        .col-sm-push-7 {
+            left: 58.33333333%
+        }
+        .col-sm-push-6 {
+            left: 50%
+        }
+        .col-sm-push-5 {
+            left: 41.66666667%
+        }
+        .col-sm-push-4 {
+            left: 33.33333333%
+        }
+        .col-sm-push-3 {
+            left: 25%
+        }
+        .col-sm-push-2 {
+            left: 16.66666667%
+        }
+        .col-sm-push-1 {
+            left: 8.33333333%
+        }
+        .col-sm-push-0 {
+            left: auto
+        }
+        .col-sm-offset-12 {
+            margin-left: 100%
+        }
+        .col-sm-offset-11 {
+            margin-left: 91.66666667%
+        }
+        .col-sm-offset-10 {
+            margin-left: 83.33333333%
+        }
+        .col-sm-offset-9 {
+            margin-left: 75%
+        }
+        .col-sm-offset-8 {
+            margin-left: 66.66666667%
+        }
+        .col-sm-offset-7 {
+            margin-left: 58.33333333%
+        }
+        .col-sm-offset-6 {
+            margin-left: 50%
+        }
+        .col-sm-offset-5 {
+            margin-left: 41.66666667%
+        }
+        .col-sm-offset-4 {
+            margin-left: 33.33333333%
+        }
+        .col-sm-offset-3 {
+            margin-left: 25%
+        }
+        .col-sm-offset-2 {
+            margin-left: 16.66666667%
+        }
+        .col-sm-offset-1 {
+            margin-left: 8.33333333%
+        }
+        .col-sm-offset-0 {
+            margin-left: 0
+        }
+    }
+    
+    @media (min-width:992px) {
+        .col-md-1,
+        .col-md-2,
+        .col-md-3,
+        .col-md-4,
+        .col-md-5,
+        .col-md-6,
+        .col-md-7,
+        .col-md-8,
+        .col-md-9,
+        .col-md-10,
+        .col-md-11,
+        .col-md-12 {
+            float: left
+        }
+        .col-md-12 {
+            width: 100%
+        }
+        .col-md-11 {
+            width: 91.66666667%
+        }
+        .col-md-10 {
+            width: 83.33333333%
+        }
+        .col-md-9 {
+            width: 75%
+        }
+        .col-md-8 {
+            width: 66.66666667%
+        }
+        .col-md-7 {
+            width: 58.33333333%
+        }
+        .col-md-6 {
+            width: 50%
+        }
+        .col-md-5 {
+            width: 41.66666667%
+        }
+        .col-md-4 {
+            width: 33.33333333%
+        }
+        .col-md-3 {
+            width: 25%
+        }
+        .col-md-2 {
+            width: 16.66666667%
+        }
+        .col-md-1 {
+            width: 8.33333333%
+        }
+        .col-md-pull-12 {
+            right: 100%
+        }
+        .col-md-pull-11 {
+            right: 91.66666667%
+        }
+        .col-md-pull-10 {
+            right: 83.33333333%
+        }
+        .col-md-pull-9 {
+            right: 75%
+        }
+        .col-md-pull-8 {
+            right: 66.66666667%
+        }
+        .col-md-pull-7 {
+            right: 58.33333333%
+        }
+        .col-md-pull-6 {
+            right: 50%
+        }
+        .col-md-pull-5 {
+            right: 41.66666667%
+        }
+        .col-md-pull-4 {
+            right: 33.33333333%
+        }
+        .col-md-pull-3 {
+            right: 25%
+        }
+        .col-md-pull-2 {
+            right: 16.66666667%
+        }
+        .col-md-pull-1 {
+            right: 8.33333333%
+        }
+        .col-md-pull-0 {
+            right: auto
+        }
+        .col-md-push-12 {
+            left: 100%
+        }
+        .col-md-push-11 {
+            left: 91.66666667%
+        }
+        .col-md-push-10 {
+            left: 83.33333333%
+        }
+        .col-md-push-9 {
+            left: 75%
+        }
+        .col-md-push-8 {
+            left: 66.66666667%
+        }
+        .col-md-push-7 {
+            left: 58.33333333%
+        }
+        .col-md-push-6 {
+            left: 50%
+        }
+        .col-md-push-5 {
+            left: 41.66666667%
+        }
+        .col-md-push-4 {
+            left: 33.33333333%
+        }
+        .col-md-push-3 {
+            left: 25%
+        }
+        .col-md-push-2 {
+            left: 16.66666667%
+        }
+        .col-md-push-1 {
+            left: 8.33333333%
+        }
+        .col-md-push-0 {
+            left: auto
+        }
+        .col-md-offset-12 {
+            margin-left: 100%
+        }
+        .col-md-offset-11 {
+            margin-left: 91.66666667%
+        }
+        .col-md-offset-10 {
+            margin-left: 83.33333333%
+        }
+        .col-md-offset-9 {
+            margin-left: 75%
+        }
+        .col-md-offset-8 {
+            margin-left: 66.66666667%
+        }
+        .col-md-offset-7 {
+            margin-left: 58.33333333%
+        }
+        .col-md-offset-6 {
+            margin-left: 50%
+        }
+        .col-md-offset-5 {
+            margin-left: 41.66666667%
+        }
+        .col-md-offset-4 {
+            margin-left: 33.33333333%
+        }
+        .col-md-offset-3 {
+            margin-left: 25%
+        }
+        .col-md-offset-2 {
+            margin-left: 16.66666667%
+        }
+        .col-md-offset-1 {
+            margin-left: 8.33333333%
+        }
+        .col-md-offset-0 {
+            margin-left: 0
+        }
+    }
+    
+    @media (min-width:1200px) {
+        .col-lg-1,
+        .col-lg-2,
+        .col-lg-3,
+        .col-lg-4,
+        .col-lg-5,
+        .col-lg-6,
+        .col-lg-7,
+        .col-lg-8,
+        .col-lg-9,
+        .col-lg-10,
+        .col-lg-11,
+        .col-lg-12 {
+            float: left
+        }
+        .col-lg-12 {
+            width: 100%
+        }
+        .col-lg-11 {
+            width: 91.66666667%
+        }
+        .col-lg-10 {
+            width: 83.33333333%
+        }
+        .col-lg-9 {
+            width: 75%
+        }
+        .col-lg-8 {
+            width: 66.66666667%
+        }
+        .col-lg-7 {
+            width: 58.33333333%
+        }
+        .col-lg-6 {
+            width: 50%
+        }
+        .col-lg-5 {
+            width: 41.66666667%
+        }
+        .col-lg-4 {
+            width: 33.33333333%
+        }
+        .col-lg-3 {
+            width: 25%
+        }
+        .col-lg-2 {
+            width: 16.66666667%
+        }
+        .col-lg-1 {
+            width: 8.33333333%
+        }
+        .col-lg-pull-12 {
+            right: 100%
+        }
+        .col-lg-pull-11 {
+            right: 91.66666667%
+        }
+        .col-lg-pull-10 {
+            right: 83.33333333%
+        }
+        .col-lg-pull-9 {
+            right: 75%
+        }
+        .col-lg-pull-8 {
+            right: 66.66666667%
+        }
+        .col-lg-pull-7 {
+            right: 58.33333333%
+        }
+        .col-lg-pull-6 {
+            right: 50%
+        }
+        .col-lg-pull-5 {
+            right: 41.66666667%
+        }
+        .col-lg-pull-4 {
+            right: 33.33333333%
+        }
+        .col-lg-pull-3 {
+            right: 25%
+        }
+        .col-lg-pull-2 {
+            right: 16.66666667%
+        }
+        .col-lg-pull-1 {
+            right: 8.33333333%
+        }
+        .col-lg-pull-0 {
+            right: auto
+        }
+        .col-lg-push-12 {
+            left: 100%
+        }
+        .col-lg-push-11 {
+            left: 91.66666667%
+        }
+        .col-lg-push-10 {
+            left: 83.33333333%
+        }
+        .col-lg-push-9 {
+            left: 75%
+        }
+        .col-lg-push-8 {
+            left: 66.66666667%
+        }
+        .col-lg-push-7 {
+            left: 58.33333333%
+        }
+        .col-lg-push-6 {
+            left: 50%
+        }
+        .col-lg-push-5 {
+            left: 41.66666667%
+        }
+        .col-lg-push-4 {
+            left: 33.33333333%
+        }
+        .col-lg-push-3 {
+            left: 25%
+        }
+        .col-lg-push-2 {
+            left: 16.66666667%
+        }
+        .col-lg-push-1 {
+            left: 8.33333333%
+        }
+        .col-lg-push-0 {
+            left: auto
+        }
+        .col-lg-offset-12 {
+            margin-left: 100%
+        }
+        .col-lg-offset-11 {
+            margin-left: 91.66666667%
+        }
+        .col-lg-offset-10 {
+            margin-left: 83.33333333%
+        }
+        .col-lg-offset-9 {
+            margin-left: 75%
+        }
+        .col-lg-offset-8 {
+            margin-left: 66.66666667%
+        }
+        .col-lg-offset-7 {
+            margin-left: 58.33333333%
+        }
+        .col-lg-offset-6 {
+            margin-left: 50%
+        }
+        .col-lg-offset-5 {
+            margin-left: 41.66666667%
+        }
+        .col-lg-offset-4 {
+            margin-left: 33.33333333%
+        }
+        .col-lg-offset-3 {
+            margin-left: 25%
+        }
+        .col-lg-offset-2 {
+            margin-left: 16.66666667%
+        }
+        .col-lg-offset-1 {
+            margin-left: 8.33333333%
+        }
+        .col-lg-offset-0 {
+            margin-left: 0
+        }
+    }
+    
+    .clearfix:before,
+    .clearfix:after,
+    .container:before,
+    .container:after,
+    .container-fluid:before,
+    .container-fluid:after,
+    .row:before,
+    .row:after {
+        content: " ";
+        display: table
+    }
+    
+    .clearfix:after,
+    .container:after,
+    .container-fluid:after,
+    .row:after {
+        clear: both
+    }
+    
+    .center-block {
+        display: block;
+        margin-left: auto;
+        margin-right: auto
+    }
+    
+    .pull-right {
+        float: right!important
+    }
+    
+    .pull-left {
+        float: left!important
+    }
+    
+    .hide {
+        display: none!important
+    }
+    
+    .show {
+        display: block!important
+    }
+    
+    .invisible {
+        visibility: hidden
+    }
+    
+    .text-hide {
+        font: 0/0 a;
+        color: transparent;
+        text-shadow: none;
+        background-color: transparent;
+        border: 0
+    }
+    
+    .hidden {
+        display: none!important
+    }
+    
+    .affix {
+        position: fixed
+    }
+    
+    .visible-xs,
+    .visible-sm,
+    .visible-md,
+    .visible-lg {
+        display: none!important
+    }
+    
+    .visible-xs-block,
+    .visible-xs-inline,
+    .visible-xs-inline-block,
+    .visible-sm-block,
+    .visible-sm-inline,
+    .visible-sm-inline-block,
+    .visible-md-block,
+    .visible-md-inline,
+    .visible-md-inline-block,
+    .visible-lg-block,
+    .visible-lg-inline,
+    .visible-lg-inline-block {
+        display: none!important
+    }
+    
+    @media (max-width:767px) {
+        .visible-xs {
+            display: block!important
+        }
+        table.visible-xs {
+            display: table
+        }
+        tr.visible-xs {
+            display: table-row!important
+        }
+        th.visible-xs,
+        td.visible-xs {
+            display: table-cell!important
+        }
+        .visible-xs-block {
+            display: block!important
+        }
+        .visible-xs-inline {
+            display: inline!important
+        }
+        .visible-xs-inline-block {
+            display: inline-block!important
+        }
+    }
+    
+    @media (min-width:768px) and (max-width:991px) {
+        .visible-sm {
+            display: block!important
+        }
+        table.visible-sm {
+            display: table
+        }
+        tr.visible-sm {
+            display: table-row!important
+        }
+        th.visible-sm,
+        td.visible-sm {
+            display: table-cell!important
+        }
+        .visible-sm-block {
+            display: block!important
+        }
+        .visible-sm-inline {
+            display: inline!important
+        }
+        .visible-sm-inline-block {
+            display: inline-block!important
+        }
+    }
+    
+    @media (min-width:992px) and (max-width:1199px) {
+        .visible-md {
+            display: block!important
+        }
+        table.visible-md {
+            display: table
+        }
+        tr.visible-md {
+            display: table-row!important
+        }
+        th.visible-md,
+        td.visible-md {
+            display: table-cell!important
+        }
+        .visible-md-block {
+            display: block!important
+        }
+        .visible-md-inline {
+            display: inline!important
+        }
+        .visible-md-inline-block {
+            display: inline-block!important
+        }
+    }
+    
+    @media (min-width:1200px) {
+        .visible-lg {
+            display: block!important
+        }
+        table.visible-lg {
+            display: table
+        }
+        tr.visible-lg {
+            display: table-row!important
+        }
+        th.visible-lg,
+        td.visible-lg {
+            display: table-cell!important
+        }
+    }
+    
+    @media (min-width:1200px) {
+        .visible-lg-block {
+            display: block!important
+        }
+    }
+    
+    @media (min-width:1200px) {
+        .visible-lg-inline {
+            display: inline!important
+        }
+    }
+    
+    @media (min-width:1200px) {
+        .visible-lg-inline-block {
+            display: inline-block!important
+        }
+    }
+    
+    @media (max-width:767px) {
+        .hidden-xs {
+            display: none!important
+        }
+    }
+    
+    @media (min-width:768px) and (max-width:991px) {
+        .hidden-sm {
+            display: none!important
+        }
+    }
+    
+    @media (min-width:992px) and (max-width:1199px) {
+        .hidden-md {
+            display: none!important
+        }
+    }
+    
+    @media (min-width:1200px) {
+        .hidden-lg {
+            display: none!important
+        }
+    }
+    
+    .visible-print {
+        display: none!important
+    }
+    
+    @media print {
+        .visible-print {
+            display: block!important
+        }
+        table.visible-print {
+            display: table
+        }
+        tr.visible-print {
+            display: table-row!important
+        }
+        th.visible-print,
+        td.visible-print {
+            display: table-cell!important
+        }
+    }
+    
+    .visible-print-block {
+        display: none!important
+    }
+    
+    @media print {
+        .visible-print-block {
+            display: block!important
+        }
+    }
+    
+    .visible-print-inline {
+        display: none!important
+    }
+    
+    @media print {
+        .visible-print-inline {
+            display: inline!important
+        }
+    }
+    
+    .visible-print-inline-block {
+        display: none!important
+    }
+    
+    @media print {
+        .visible-print-inline-block {
+            display: inline-block!important
+        }
+    }
+    
+    @media print {
+        .hidden-print {
+            display: none!important
+        }
+    }
+    </style>
+    <!-- Header CSS (First Sections of Website: paste after release from header.min.css here) -->
+    <style>
+    html .loader {
+        background: #fff;
+        bottom: 0;
+        height: 100%;
+        left: 0;
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: 100%;
+        z-index: 9999
+    }
+    
+    html .loader .loader_inner {
+        background-image: url(../img/preloader.gif);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-color: #fff;
+        height: 60px;
+        width: 60px;
+        margin-top: -30px;
+        margin-left: -30px;
+        left: 50%;
+        top: 50%;
+        position: absolute
+    }
+    </style>
+    <!-- Load CSS, CSS Localstorage & WebFonts Main Function -->
+    <script>
+    ! function(e) {
+        "use strict";
+
+        function t(e, t, n) {
+            e.addEventListener ? e.addEventListener(t, n, !1) : e.attachEvent && e.attachEvent("on" + t, n)
+        }
+
+        function n(t, n) {
+            return e.localStorage && localStorage[t + "_content"] && localStorage[t + "_file"] === n
+        }
+
+        function a(t, a) {
+            if (e.localStorage && e.XMLHttpRequest) n(t, a) ? o(localStorage[t + "_content"]) : l(t, a);
+            else {
+                var s = r.createElement("link");
+                s.href = a, s.id = t, s.rel = "stylesheet", s.type = "text/css", r.getElementsByTagName("head")[0].appendChild(s), r.cookie = t
+            }
+        }
+
+        function l(e, t) {
+            var n = new XMLHttpRequest;
+            n.open("GET", t, !0), n.onreadystatechange = function() {
+                4 === n.readyState && 200 === n.status && (o(n.responseText), localStorage[e + "_content"] = n.responseText, localStorage[e + "_file"] = t)
+            }, n.send()
+        }
+
+        function o(e) {
+            var t = r.createElement("style");
+            t.setAttribute("type", "text/css"), r.getElementsByTagName("head")[0].appendChild(t), t.styleSheet ? t.styleSheet.cssText = e : t.innerHTML = e
+        }
+        var r = e.document;
+        e.loadCSS = function(e, t, n) {
+            var a, l = r.createElement("link");
+            if (t) a = t;
+            else {
+                var o;
+                o = r.querySelectorAll ? r.querySelectorAll("style,link[rel=stylesheet],script") : (r.body || r.getElementsByTagName("head")[0]).childNodes, a = o[o.length - 1]
+            }
+            var s = r.styleSheets;
+            l.rel = "stylesheet", l.href = e, l.media = "only x", a.parentNode.insertBefore(l, t ? a : a.nextSibling);
+            var c = function(e) {
+                for (var t = l.href, n = s.length; n--;)
+                    if (s[n].href === t) return e();
+                setTimeout(function() {
+                    c(e)
+                })
+            };
+            return l.onloadcssdefined = c, c(function() {
+                l.media = n || "all"
+            }), l
+        }, e.loadLocalStorageCSS = function(l, o) {
+            n(l, o) || r.cookie.indexOf(l) > -1 ? a(l, o) : t(e, "load", function() {
+                a(l, o)
+            })
+        }
+    }(this);
+    </script>
+    <!-- Load CSS Start -->
+    <script>
+    loadLocalStorageCSS("webfonts", "css/fonts.min.css?ver=1.0.0");
+    </script>
+    <script>
+    loadCSS("css/header.min.css?ver=1.0.0", false, "all");
+    </script>
+    <script>
+    loadCSS("css/main.min.css?ver=1.0.0", false, "all");
+    </script>
+    <!-- Load CSS End -->
+    <!-- Load CSS Compiled without JS -->
+    <noscript>
+        <link rel="stylesheet" href="css/fonts.min.css">
+        <link rel="stylesheet" href="css/main.min.css">
+    </noscript>
+</head>
+
+<body>
+    <div class="loader">
+        <div class="loader_inner"></div>
+    </div>
+    <!-- Модальное окно -->
+    <div class="popup" data-modal="modal-1">
+        <div class="dm-table">
+            <div class="dm-cell">
+                <div class="dm-modal">
+                    <a href="#" class="close">
+                    </a>
+                    <p class='success_mail'>Заявка отправлена</p>
+                    <h2 class="title">Оставьте <span class="color">заявку</span></h2>
+                    <p class="text">и мы свяжемся с вами в ближайшее время</p>
+                    <form id="form">
+                        <div>
+                            <label>Имя*</label>
+                            <div class="modal_form_input_wrap">
+                                <div class="modal_input_error">Заполните поле
+                                    <div class="modal_error_triangle"></div>
+                                    <div class="modal_error_chest_img"></div>
+                                </div>
+                                <input name="name" class="modal_form_input" type="text" placeholder="Введите ваше имя">
+                            </div>
+                        </div>
+                        <div>
+                            <label>Email*</label>
+                            <div class="modal_form_input_wrap">
+                                <div class="modal_input_error">Заполните поле
+                                    <div class="modal_error_triangle"></div>
+                                    <div class="modal_error_chest_img"></div>
+                                </div>
+                                <input name="email" class="modal_form_email" type="text" placeholder="Введите ваш адрес почты">
+                            </div>
+                        </div>
+                        <div>
+                            <label>Телефон*</label>
+                            <div class="modal_form_input_wrap">
+                                <div class="modal_input_error">Заполните поле
+                                    <div class="modal_error_triangle"></div>
+                                    <div class="modal_error_chest_img"></div>
+                                </div>
+                                <input name="phone" class="modal_form_phone" type="text" placeholder="Введите номер телефона">
+                            </div>
+                        </div>
+                        <input type="hidden" name="form_name" value="Получение КП">
+                        <input type="hidden" name="form_type" value="modal">
+                        <input type="submit" value="Отправить">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="overlay">
+        </div>
+    </div>
+    <!-- Модальное окно 2-->
+    <div class="popup" data-modal="modal-res">
+        <div class="dm-table">
+            <div class="dm-cell">
+                <div class="dm-modal">
+                    <p class='success_mail'>Заявка отправлена</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Политика конденфициальности -->
+    <div class="popup popup2" data-modal="modal-5">
+        <div class="dm-table">
+            <div class="dm-cell">
+                <div class="dm-modal">
+                    <a href="#" class="close">
+                        <span class="left"></span>
+                        <span class="right"></span>
+                    </a>
+                    <div class="dm-modal_inner">
+                        <p class="dm-modal_inner_h1">Политика конфиденциальности</p>
+                        <p class="dm-modal_inner_h2">Защита личных данных</p>
+                        <p>Для защиты ваших личных данных у нас внедрен ряд средств защиты, которые действуют при введении, передаче или работе с вашими личными данными.</p>
+                        <p class="dm-modal_inner_h2">Разглашение личных сведений и передача этих сведений третьим лицам</p>
+                        <p>Ваши личные сведения могут быть разглашены нами только в том случае это необходимо для: (а) обеспечения соответствия предписаниям закона или требованиям судебного процесса в нашем отношении ; (б) защиты наших прав или собственности (в) принятия срочных мер по обеспечению личной безопасности наших сотрудников или потребителей предоставляемых им услуг, а также обеспечению общественной безопасности. Личные сведения, полученные в наше распоряжение при регистрации, могут передаваться третьим организациям и лицам, состоящим с нами в партнерских отношениях для улучшения качества оказываемых услуг. Эти сведения не будут использоваться в каких-либо иных целях, кроме перечисленных выше. Адрес электронной почты, предоставленный вами при заказе товара, может использоваться для отправки вам сообщений или уведомлений об изменениях, связанных с вашей заявкой, а также рассылки сообщений о происходящих в компании событиях и изменениях, важной информации о новых товарах и услугах и т.д. Предусмотрена возможность отказа от подписки на эти почтовые сообщения.</p>
+                        <p class="dm-modal_inner_h2">Использование файлов «cookie»</p>
+                        <p>Когда пользователь посещает веб-узел, на его компьютер записывается файл «cookie» (если пользователь разрешает прием таких файлов). Если же пользователь уже посещал данный веб-узел, файл «cookie» считывается с компьютера. Одно из направлений использования файлов «cookie» связано с тем, что с их помощью облегчается сбор статистики посещения. Эти сведения помогают определять, какая информация, отправляемая заказчикам, может представлять для них наибольший интерес. Сбор этих данных осуществляется в обобщенном виде и никогда не соотносится с личными сведениями пользователей. Третьи стороны, включая компании Google, показывают объявления нашей компании на страницах сайтов в Интернете. Третьи стороны, включая компанию Google, используют cookie, чтобы показывать объявления, основанные на предыдущих посещениях пользователем наших веб-сайтов и интересах в веб-браузерах. Пользователи могут запретить компаниям Google использовать cookie. Для этого необходимо посетить специальную страницу компании Google по этому адресу: http://www.google.com/privacy/ads/</p>
+                        <p class="dm-modal_inner_h2">Изменения в заявлении о соблюдении конфиденциальности</p>
+                        <p>Заявление о соблюдении конфиденциальности предполагается периодически обновлять. При этом будет изменяться дата предыдущего обновления, указанная в начале документа. Сообщения об изменениях в данном заявлении будут размещаться на видном месте наших веб-узлов Осуществив заказ на нашем сайте какого-либо товара, Вы соглашаетесь получить смс-уведомление о доставке купленного Вами товара в соответствующее почтовое отделение, согласно указанному вами индексу.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="overlay">
+        </div>
+    </div>
+    <!-- Здесь пишем код -->
+    <nav class="mobile-menu">
+        <ul class="mobile_navigation">
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">Услуги</a></li>
+            <li><a href="#">Команда</a> </li>
+            <li><a href="#">Видео</a></li>
+            <li><a href="#">Клиенты</a></li>
+            <li><a href="#">Контакты</a></li>
+        </ul>
+        <div class="overlay"></div>
+    </nav>
+    <!-- header -->
+    <div class="button-mobile-menu">
+        <span class="left"></span>
+        <span class="center"></span>
+        <span class="right"></span>
+    </div>
+                        <div class="top-panel">
+                            <nav class="nav">
+                                <ul id="desktop-menu">
+                                    <li data-menuanchor="2" ><a href="#2">О нас</a></li>
+                                    <li data-menuanchor="3" ><a href="#3">Услуги</a></li>
+                                    <li data-menuanchor="4" ><a href="#4">Команда</a> </li>
+                                    <li data-menuanchor="6" ><a href="#6">Видео</a></li>
+                                    <li data-menuanchor="7" ><a href="#7">Клиенты</a></li>
+                                    <li data-menuanchor="8" ><a href="#8">Контакты</a></li>
+                                </ul>
+                            </nav>
+                            <div class="lang">
+                                <a href="#">RU</a>
+                                <ul class="dinamic-list">
+                                    <li><a href="#">FR</a></li>
+                                    <li><a href="#">EN</a></li>
+                                    <li><a href="#">UA</a></li>
+                                </ul>
+                            </div>
+                        </div>
+    <div class="main">
+        <section class="section header">
+            <div class="container">
+                <div class="row">
+                    <div class="wrap-container">
+                        <div class="wrap-position">
+                            <div class="title-1">
+                                <div class="title-container">
+                                    <h1 class="title" id="hd-tlt">Goldman Consultimg</h1>
+                                    <div class="border">
+                                        <div class="line-cont">
+                                            <span class="line-1" id="hd-ln-1"></span>
+                                            <span class="line-2" id="hd-ln-2"></span>
+                                            <span class="line-3" id="hd-ln-3"></span>
+                                            <span class="line-4" id="hd-ln-4"></span>
+                                            <span class="line-5" id="hd-ln-5"></span>
+                                        </div>
+                                    </div>
+                                    <div class="aside-container">
+                                        <p class="aside" id="hd-as">Юридический сервис для выдающихся компаний</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="slider">
+                                    <div class="col-lg-4 col-md-4 owl-title">
+                                        <h2><p>Ближайшие</p>
+                                            <p class="color">мероприятия</p></h2>
+                                    </div>
+                                    <div class="owl-container col-lg-8 col-md-8">
+                                        <div class="owl-carousel">
+                                            <div class="owl-wrap">
+                                                <div class="img-container">
+                                                    <img src="img/slider-img-1.jpg" alt="">
+                                                    <a href="#" class="hover">
+                                                        <span>Подробнее</span>
+                                                    </a>
+                                                </div>
+                                                <aside class="text">
+                                                    <p>Тренинг “Личная эффективность</p>
+                                                </aside>
+                                            </div>
+                                            <div class="owl-wrap">
+                                                <div class="img-container">
+                                                    <img src="img/slider-img-2.jpg" alt="">
+                                                    <a href="#" class="hover">
+                                                        <span>Подробнее</span>
+                                                    </a>
+                                                </div>
+                                                <aside class="text">
+                                                    <p>Тренинг “Личная эффективность</p>
+                                                </aside>
+                                            </div>
+                                            <div class="owl-wrap">
+                                                <div class="img-container">
+                                                    <img src="img/slider-img-1.jpg" alt="">
+                                                    <a href="#" class="hover">
+                                                        <span>Подробнее</span>
+                                                    </a>
+                                                </div>
+                                                <aside class="text">
+                                                    <p>Тренинг “Личная эффективность</p>
+                                                </aside>
+                                            </div>
+                                            <div class="owl-wrap">
+                                                <div class="img-container">
+                                                    <img src="img/slider-img-2.jpg" alt="">
+                                                    <a href="#" class="hover">
+                                                        <span>Подробнее</span>
+                                                    </a>
+                                                </div>
+                                                <aside class="text">
+                                                    <p>Тренинг “Личная эффективность</p>
+                                                </aside>
+                                            </div>
+                                            <div class="owl-wrap">
+                                                <div class="img-container">
+                                                    <img src="img/slider-img-1.jpg" alt="">
+                                                    <a href="#" class="hover">
+                                                        <span>Подробнее</span>
+                                                    </a>
+                                                </div>
+                                                <aside class="text">
+                                                    <p>Тренинг “Личная эффективность</p>
+                                                </aside>
+                                            </div>
+                                            <div class="owl-wrap">
+                                                <div class="img-container">
+                                                    <img src="img/slider-img-2.jpg" alt="">
+                                                    <a href="#" class="hover">
+                                                        <span>Подробнее</span>
+                                                    </a>
+                                                </div>
+                                                <aside class="text">
+                                                    <p>Тренинг “Личная эффективность</p>
+                                                </aside>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section about-us">
+            <img src="img/man.png" class="decor-img">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6 mobile-intent">
+                        <div class="title-2">
+                            <div class="title-container">
+                                <h2 class="title" id="sec1-tlt">Принципы которых, мы придерживаемся в работе</h2>
+                                <div class="border">
+                                    <div class="line-cont">
+                                        <span class="line-1" id="sec1-ln-1"></span>
+                                        <span class="line-2" id="sec1-ln-2"></span>
+                                        <span class="line-3" id="sec1-ln-3"></span>
+                                        <span class="line-4" id="sec1-ln-4"></span>
+                                        <span class="line-5" id="sec1-ln-5"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content" id="sec1-con">
+                            <ul>
+                                <li>Все наши Клиенты выдающиеся, так как каждый из них создал уникальный и неповторимый бизнес.</li>
+                                <li>Для нас бизнес Клиента – наивысшая ценность.</li>
+                                <li>Каждый наш совет или действие должны повысить безопасность Клиента, сохранить и приумножить его активы.</li>
+                                <li>Днем и ночью наши лучшие эксперты готовы сделать все возможное для защиты наших Клиентов.</li>
+                                <li>Мы трудимся, растем и совершенствуемся, чтобы оказывать превосходный юридический сервис.</li>
+                            </ul>
+                            <aside class="who">
+                                <p class="name">Андрей Лиманский</p>
+                                <p class="skill">управляющий партнер Goldman Consulting</p>
+                            </aside>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section service">
+            <div class="row">
+                <div class="service-container">
+                    <div class="col-lg-4 col-md-4 col-sm-4  service_1">
+                        <div class="content" id="sec2-con1">
+                            <h3 class="title">
+                                <p>Инвестиционный </p>
+                                <p>и налоговый консалтинг</p>
+                            </h3>
+                            <div class="clearfix wrap">
+                                <div class="col-wrap">
+                                    <div class="col-lg-6 col-sm-6 item">
+                                        <span class="icon castle"></span>
+                                        <p class="text">Разработка безопасной структуры бизнеса</p>
+                                    </div>
+                                    <div class="col-lg-6 col-sm-6 item">
+                                        <span class="icon plane"></span>
+                                        <p class="text">Легализация</p>
+                                        <p class="text">и запуск бизнеса</p>
+                                    </div>
+                                </div>
+                                <div class="col-wrap">
+                                    <div class="col-lg-6 col-sm-6 item">
+                                        <span class="icon planet"></span>
+                                        <p class="text">Международное налогооблпжение</p>
+                                    </div>
+                                    <div class="col-lg-6 col-sm-6 item">
+                                        <span class="icon setting"></span>
+                                        <p class="text">Налоговая</p>
+                                        <p class="text">оптимизация</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="link-give modal" data-modal="modal-1" data-info="Заявка на получение КП 'Инвестиционный и налоговый консалтинг'">Получить КП</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4  service_2">
+                        <div class="content" id="sec2-con2">
+                            <h3 class="title">
+                                <p>Юредическое </p>
+                                <p>сопровождение компании</p>
+                            </h3>
+                            <div class="clearfix wrap">
+                                <div class="col-wrap">
+                                    <div class="col-lg-6 col-sm-6 item">
+                                        <span class="icon hammer"></span>
+                                        <p class="text">Разработка безопасной структуры бизнеса</p>
+                                    </div>
+                                    <div class="col-lg-6 col-sm-6 item">
+                                        <span class="icon docs"></span>
+                                        <p class="text">Легализация</p>
+                                        <p class="text">и запуск бизнеса</p>
+                                    </div>
+                                </div>
+                                <div class="col-wrap">
+                                    <div class="col-lg-6 col-sm-6 item">
+                                        <span class="icon people"></span>
+                                        <p class="text">Международное налогооблпжение</p>
+                                    </div>
+                                    <div class="col-lg-6 col-sm-6 item">
+                                        <span class="icon book"></span>
+                                        <p class="text">Налоговая</p>
+                                        <p class="text">оптимизация</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="link-give modal" data-modal="modal-1" data-info="Заявка на получение КП 'Юредическое сопровождение компании'">Получить КП</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4  service_3">
+                        <div class="content" id="sec2-con3">
+                            <h3 class="title">
+                                <p>Защита и монетизация</p>
+                                <p>интеллектуальной собственности</p>
+                            </h3>
+                            <div class="clearfix wrap">
+                                <div class="col-wrap">
+                                    <div class="col-lg-6 col-sm-6 item">
+                                        <span class="icon comp"></span>
+                                        <p class="text">Разработка безопасной структуры бизнеса</p>
+                                    </div>
+                                    <div class="col-lg-6 col-sm-6 item">
+                                        <span class="icon garm"></span>
+                                        <p class="text">Легализация</p>
+                                        <p class="text">и запуск бизнеса</p>
+                                    </div>
+                                </div>
+                                <div class="col-wrap">
+                                    <div class="col-lg-6 col-sm-6 item">
+                                        <span class="i con lamp"></span>
+                                        <p class="text">Международное налогооблпжение</p>
+                                    </div>
+                                    <div class="col-lg-6 col-sm-6 item">
+                                        <span class="icon key"></span>
+                                        <p class="text">Налоговая</p>
+                                        <p class="text">оптимизация</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="link-give modal" data-modal="modal-1" data-info="Заявка на получение КП 'Защита и монетизация интеллектуальной собственности'">Получить КП</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section person-1">
+            <div class="clearfix">
+                <div class="about-person">
+                    <div class="grow-button">
+                        <span class="arrow"></span>
+                    </div>
+                    <div class="content">
+                        <div class="title-1">
+                            <div class="title-container">
+                                <h2 class="title" id="sec3-tlt">Андрей Лиманский </h2>
+                                <div class="border">
+                                    <div class="line-cont">
+                                        <span class="line-1" id="sec3-ln-1"></span>
+                                        <span class="line-2" id="sec3-ln-2"></span>
+                                        <span class="line-3" id="sec3-ln-3"></span>
+                                        <span class="line-4" id="sec3-ln-4"></span>
+                                        <span class="line-5" id="sec3-ln-5"></span>
+                                    </div>
+                                </div>
+                                <div class="aside-container">
+                                    <p class="aside" id="sec3-as">управляющий партнер</p>
+                                </div>
+                            </div>
+                        </div>
+                        <aside class="about-skill" id="sec3-con-1">
+                            <h3 class="title-skill">Корпоративное и налоговое право</h3>
+                            <p class="text">Доверие Клиента нельзя завоевать быстро и легко. Оно заслуживается постепенно благодаря кропотливому труду и безграничной заботе о Клиенте. Но как бы долго оно не создавалось, утратить доверие Клиента можно в один миг. Именно поэтому о доверии наших Клиентов мы не забываем ни на минут.</p>
+                        </aside>
+                        <ul class="contacts" id="sec3-con-2">
+                            <li><a href="tel:+380577629550">+38 057 762 95 50</a></li>
+                            <li><a href="tel:+380992447295">+38 099 244 72 95</a></li>
+                            <li><a href="tel:+380980381138">+38 098 038 11 38</a></li>
+                            <li class="mail">limanskiy@gс-lf.com</li>
+                            <li class="links">
+                                <a href="#">
+                                    <span class="icon in"></span>
+                                </a>
+                                <a href="#">
+                                    <span class="icon fb"></span>
+                                </a>
+                                <a href="#">
+                                    <span class="icon insta"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="photo-person">
+                </div>
+            </div>
+        </section>
+        <section class="section person-2">
+            <div class="clearfix">
+                <div class="photo-person">
+                </div>
+                <div class="about-person">
+                <div class="grow-button">
+                        <span class="arrow"></span>
+                    </div>
+                    <div class="content">
+                        <div class="title-1">
+                            <div class="title-container">
+                                <h2 class="title" id="sec4-tlt">Виталий Цимбалистый</h2>
+                                <div class="border">
+                                    <div class="line-cont">
+                                        <span class="line-1" id="sec4-ln-1"></span>
+                                        <span class="line-2" id="sec4-ln-2"></span>
+                                        <span class="line-3" id="sec4-ln-3"></span>
+                                        <span class="line-4" id="sec4-ln-4"></span>
+                                        <span class="line-5" id="sec4-ln-5"></span>
+                                    </div>
+                                </div>
+                                <div class="aside-container">
+                                    <p class="aside" id="sec4-as">старший партнер</p>
+                                </div>
+                            </div>
+                        </div>
+                        <aside class="about-skill" id="sec4-con-1">
+                            <h3 class="title-skill">Трудове право, таможенное право и ВЭД, 
+взаимодействие с контролирующими органами.</h3>
+                            <p class="text">Доверие Клиента нельзя завоевать быстро и легко. Оно заслуживается постепенно благодаря кропотливому труду и безграничной заботе о Клиенте. Но как бы долго оно не создавалось, утратить доверие Клиента можно в один миг. Именно поэтому о доверии наших Клиентов мы не забываем ни на минуту.</p>
+                        </aside>
+                        <ul class="contacts" id="sec4-con-2">
+                            <li><a href="tel:+38 057 762 95 50">+38 057 762 95 50</a></li>
+                            <li><a href="tel:+38 099 324 24 72">+38 099 324 24 72</a></li>
+                            <li><a href="tel:+38 099 324 24 72">+38 099 324 24 72</a></li>
+                            <li class="mail">tsimbalisty@gc-lf.com</li>
+                            <li class="links">
+                                <a href="#">
+                                    <span class="icon in"></span>
+                                </a>
+                                <a href="#">
+                                    <span class="icon fb"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section video-section">
+            <div class="container">
+                <div class="row">
+                    <div class="title-2">
+                        <div class="title-container">
+                            <h2 class="title" id="sec5-tlt">Lorem ipsum dolor sit amet, 
+consectetur adipisicing elit, sed</h2>
+                            <div class="border">
+                                <div class="line-cont">
+                                    <span class="line-1" id="sec5-ln-1"></span>
+                                    <span class="line-2" id="sec5-ln-2"></span>
+                                    <span class="line-3" id="sec5-ln-3"></span>
+                                    <span class="line-4" id="sec5-ln-4"></span>
+                                    <span class="line-5" id="sec5-ln-5"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <aside class="aside">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt </p>
+                        <p>ut labore et dolore magna aliqua. Ut enim </p>
+                    </aside>
+                </div>
+            </div>
+            <div class="clearfix video-container">
+                <div class="wrap">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/JkavLvc3TPI" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="wrap">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/JkavLvc3TPI" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="wrap">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/JkavLvc3TPI" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+        <section class="section comments-section">
+            <div class="container">
+                <div class="row">
+                    <div class="title-2">
+                        <div class="title-container">
+                            <h2 class="title" id="sec6-tlt">Lorem ipsum dolor sit amet, 
+consectetur adipisicing elit, sed</h2>
+                            <div class="border">
+                                <div class="line-cont">
+                                    <span class="line-1" id="sec6-ln-1"></span>
+                                    <span class="line-2" id="sec6-ln-2"></span>
+                                    <span class="line-3" id="sec6-ln-3"></span>
+                                    <span class="line-4" id="sec6-ln-4"></span>
+                                    <span class="line-5" id="sec6-ln-5"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <aside class="aside">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt </p>
+                        <p>ut labore et dolore magna aliqua. Ut enim </p>
+                    </aside>
+                    <div class="clearfix intent">
+                        <div class="col-lg-4 col-md-4 col-sm-4 " id="sec6-con1">
+                            <div class="comments-wrap">
+                                <aside>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla </aside>
+                                <span class="arrow"></span>
+                            </div>
+                            <div class="person">
+                                <div class="img-container">
+                                    <img src="img/person-comm.png" alt="">
+                                </div>
+                                <div class="about-person">
+                                    <h4>Александр Стадник</h4>
+                                    <p>веб-разработчик</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 " id="sec6-con2">
+                            <div class="comments-wrap">
+                                <aside>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla </aside>
+                                <span class="arrow"></span>
+                            </div>
+                            <div class="person">
+                                <div class="img-container">
+                                    <img src="img/person-comm.png" alt="">
+                                </div>
+                                <div class="about-person">
+                                    <h4>Александр Стадник</h4>
+                                    <p>веб-разработчик</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 " id="sec6-con3">
+                            <div class="comments-wrap">
+                                <aside>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla </aside>
+                                <span class="arrow"></span>
+                            </div>
+                            <div class="person">
+                                <div class="img-container">
+                                    <img src="img/person-comm.png" alt="">
+                                </div>
+                                <div class="about-person">
+                                    <h4>Александр Стадник</h4>
+                                    <p>веб-разработчик</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="section footer">
+            <div class="container">
+                <div class="row">
+                    <div class="title-2">
+                        <div class="title-container">
+                            <h2 class="title" id="sec7-tlt">Lorem ipsum dolor sit amet, 
+                    consectetur adipisicing elit, sed</h2>
+                            <div class="border">
+                                <div class="line-cont">
+                                    <span class="line-1" id="sec7-ln-1"></span>
+                                    <span class="line-2" id="sec7-ln-2"></span>
+                                    <span class="line-3" id="sec7-ln-3"></span>
+                                    <span class="line-4" id="sec7-ln-4"></span>
+                                    <span class="line-5" id="sec7-ln-5"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <aside class="aside">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt </p>
+                        <p>ut labore et dolore magna aliqua. Ut enim </p>
+                    </aside>
+                    <div class="clearfix">
+                        <div class="col-lg-6 col-sm-6">
+                            <div class="maps-container">
+                                <div id="map" class="maps"></div>
+                                <script type="text/javascript">
+                                function initMap() {
+                                    var myLatLng = {
+                                        lat: 50.0078351,
+                                        lng: 36.2386811
+                                    };
+
+                                    var map = new google.maps.Map(document.getElementById('map'), {
+                                        zoom: 18,
+                                        center: myLatLng
+                                    });
+
+                                    var marker = new google.maps.Marker({
+                                        position: myLatLng,
+                                        map: map,
+                                        title: 'Hello World!'
+                                    });
+                                }
+                                </script>
+                                <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAznpSMetkd2-YmOCVdahN4elF7j4t7SZk&callback=initMap">
+                                </script>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-6">
+                            <div class="contacts-container">
+                                <div class="street">
+                                    <span class="icon">Адрес</span>
+                                    <p class="text">г. Харьков, ул. Сумская 88, офис 355
+                                    </p>
+                                </div>
+                                <div class="time">
+                                    <span class="icon">Время работы</span>
+                                    <p class="text">пн.-пт. 8:00-19:00
+                                    </p>
+                                </div>
+                                <div class="phone">
+                                    <span class="icon">Телефон</span>
+                                    <ul class="text">
+                                        <li><a href="tel:+380667777777">+38 066 777 77 77</a></li>
+                                        <li><a href="tel:+380637777777">+38 063 777 77 77</a>
+                                        </li>
+                                        <li><a href="tel:+3807777777">+38 068 777 77 77</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="email">
+                                    <span class="icon">Email</span>
+                                    <p class="text">ourmail@gmail.com
+                                    </p>
+                                </div>
+                                <div class="links">
+                                    <a href="#" class="icon in"></a>
+                                    <a href="#" class="icon fb"></a>
+                                    <a href="#" class="icon insta"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-row clearfix">
+                        <div class="company col-lg-4 col-md-4 col-sm-4">
+                            <p>©2016 Goldman Consulting</p>
+                        </div>
+                        <div class="private col-lg-4 col-md-4 col-sm-4">
+                            <a href="#" class="modal" data-modal="modal-5">Политика конфиденциальности</a>
+                        </div>
+                        <div class="developers col-lg-4 col-md-4 col-sm-4">
+                            <a href="http://landing.melfori.com/" target="_blank">Создание сайта: </a>
+                            <span class="footer-logo"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- Секция footer -->
+    <div class="hidden"></div>
+    <!--[if lt IE 9]>
+    <script src="libs/html5shiv/es5-shim.min.js"></script>
+    <script src="libs/html5shiv/html5shiv.min.js"></script>
+    <script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>`
+    <script src="libs/respond/respond.min.js"></script>
+    <![endif]-->
+    <!-- Load Scripts Start -->
+    <script>
+    var scr = {
+        "scripts": [{
+            "src": "js/libs.js",
+            "async": false
+        }, {
+            "src": "js/common.js",
+            "async": false
+        }]
+    };
+
+    ! function(t, n, r) {
+        "use strict";
+        var c = function(t) {
+            if ("[object Array]" !== Object.prototype.toString.call(t)) return !1;
+            for (var r = 0; r < t.length; r++) {
+                var c = n.createElement("script"),
+                    e = t[r];
+                c.src = e.src, c.async = e.async, n.body.appendChild(c)
+            }
+            return !0
+        };
+        t.addEventListener ? t.addEventListener("load", function() {
+            c(r.scripts);
+        }, !1) : t.attachEvent ? t.attachEvent("onload", function() {
+            c(r.scripts)
+        }) : t.onload = function() {
+            c(r.scripts)
+        }
+    }(window, document, scr);
+    </script>
+    <!-- Load Scripts End -->
+</body>
+
+</html>

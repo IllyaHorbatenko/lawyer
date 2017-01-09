@@ -8,6 +8,53 @@ $(function() {
     // };
 });
 
+function animationTitile1(td, tu, ln1, ln2, ln3, ln4, ln5, tlt, text) {
+    td.from(ln1, 0.7, { x: -100, opacity: 0, ease: Expo.easeOut }, 'ln');
+    td.from(ln2, 0.7, { x: 100, opacity: 0, ease: Expo.easeOut }, 'ln');
+    td.from(ln3, 0.7, { x: -100, opacity: 0, ease: Expo.easeOut }, 'ln');
+    td.from(ln4, 0.7, { y: 100, opacity: 0, ease: Expo.easeOut }, 'ln');
+    td.from(ln5, 0.7, { y: 100, opacity: 0, ease: Expo.easeOut }, 'ln');
+    td.from(tlt, 0.7, { y: -100, opacity: 0, ease: Expo.easeOut }, 'ln');
+    td.from(text, 0.7, { y: 100, opacity: 0, ease: Expo.easeOut }, 'ln');
+
+    tu.set(ln1, { x: -100, opacity: 0, ease: Expo.easeOut }, '+=0.5', 'ln')
+        .to(ln1, 1, { x: 0, opacity: 1, ease: Expo.easeOut }, 'ln');
+    tu.set(ln2, { x: 100, opacity: 0, ease: Expo.easeOut }, 'ln')
+        .to(ln2, 1, { x: 0, opacity: 1, ease: Expo.easeOut }, 'ln');
+    tu.set(ln3, { x: -100, opacity: 0, ease: Expo.easeOut }, 'ln')
+        .to(ln3, 1, { x: 0, opacity: 1, ease: Expo.easeOut }, 'ln');
+    tu.set(ln4, { y: 100, opacity: 0, ease: Expo.easeOut }, 'ln')
+        .to(ln4, 1, { y: 0, opacity: 1, ease: Expo.easeOut }, 'ln');
+    tu.set(ln5, { y: 100, opacity: 0, ease: Expo.easeOut }, 'ln')
+        .to(ln5, 1, { y: 0, opacity: 1, ease: Expo.easeOut }, 'ln');
+    tu.set(tlt, { y: -100, opacity: 0, ease: Expo.easeOut }, 'ln')
+        .to(tlt, 1, { y: 0, opacity: 1, ease: Expo.easeOut }, 'ln');
+    tu.set(text, { y: 100, opacity: 0, ease: Expo.easeOut }, 'ln')
+        .to(text, 1, { y: 0, opacity: 1, ease: Expo.easeOut }, 'ln');
+}
+
+function animationTitile2(td, tu, ln1, ln2, ln3, ln4, ln5, tlt) {
+    td.from(ln1, 0.7, { x: -100, opacity: 0, ease: Expo.easeOut }, 'ln');
+    td.from(ln2, 0.7, { x: 100, opacity: 0, ease: Expo.easeOut }, 'ln');
+    td.from(ln3, 0.7, { x: -100, opacity: 0, ease: Expo.easeOut }, 'ln');
+    td.from(ln4, 0.7, { y: 100, opacity: 0, ease: Expo.easeOut }, 'ln');
+    td.from(ln5, 0.7, { y: 100, opacity: 0, ease: Expo.easeOut }, 'ln');
+    td.from(tlt, 0.7, { y: -100, opacity: 0, ease: Expo.easeOut }, 'ln');
+
+    tu.set(ln1, { x: -100, opacity: 0, ease: Expo.easeOut }, '+=0.5', 'ln')
+        .to(ln1, 1, { x: 0, opacity: 1, ease: Expo.easeOut }, 'ln');
+    tu.set(ln2, { x: 100, opacity: 0, ease: Expo.easeOut }, 'ln')
+        .to(ln2, 1, { x: 0, opacity: 1, ease: Expo.easeOut }, 'ln');
+    tu.set(ln3, { x: -100, opacity: 0, ease: Expo.easeOut }, 'ln')
+        .to(ln3, 1, { x: 0, opacity: 1, ease: Expo.easeOut }, 'ln');
+    tu.set(ln4, { y: 100, opacity: 0, ease: Expo.easeOut }, 'ln')
+        .to(ln4, 1, { y: 0, opacity: 1, ease: Expo.easeOut }, 'ln');
+    tu.set(ln5, { y: 100, opacity: 0, ease: Expo.easeOut }, 'ln')
+        .to(ln5, 1, { y: 0, opacity: 1, ease: Expo.easeOut }, 'ln');
+    tu.set(tlt, { y: -100, opacity: 0, ease: Expo.easeOut }, 'ln')
+        .to(tlt, 1, { y: 0, opacity: 1, ease: Expo.easeOut }, 'ln');
+}
+
 function activeMenuElem(elem) {
     elem.click(function() {
         elem.each(function() {
@@ -41,8 +88,10 @@ function langList() {
     })
 }
 $(window).resize(function() {
+
     border1();
     border2();
+
 });
 
 
@@ -213,7 +262,8 @@ $(document).ready(function() {
 
 
 
-    if (md.mobile() != "iPad") {
+    if (document.documentElement.clientWidth > 1200 && md.mobile() != "iPad") {
+
         $('.main').fullpage({
             anchors: ['1', '2', '3', '4', '5', '6', '7', '8'],
             menu: '#desktop-menu',
@@ -223,8 +273,6 @@ $(document).ready(function() {
         });
 
 
-    }
-    if (document.documentElement.clientWidth > 1200 && md.mobile() != "iPad") {
 
 
         var td1 = new TimelineMax(),
@@ -246,7 +294,7 @@ $(document).ready(function() {
             tu8 = new TimelineMax(),
 
             td = [td1, td2, td3, td4, td5, td6, td7, td8],
-        tu = [tu1, tu2, tu3, tu4, tu5, tu6, td7, tu8];
+            tu = [tu1, tu2, tu3, tu4, tu5, tu6, td7, tu8];
 
         td1.pause();
         td2.pause();
@@ -270,55 +318,16 @@ $(document).ready(function() {
 
 
         // секция 1
-        var rule1 = CSSRulePlugin.getRule(".header .slider .owl-controls:after");
-        var rule2 = CSSRulePlugin.getRule(".header .slider .owl-controls:before");
-        td1.from('#hd-ln-1', 0.7, { x: -100, opacity: 0, ease: Power4.easeOut }, 'hd-ln', '-=0.5');
-        td1.from('#hd-ln-2', 0.7, { x: 100, opacity: 0, ease: Power4.easeOut }, '-=0.5', 'hd-ln');
-        td1.from('#hd-ln-3', 0.7, { x: -100, opacity: 0, ease: Power4.easeOut }, '-=0.5', 'hd-ln');
-        td1.from('#hd-ln-4', 0.7, { y: 100, opacity: 0, ease: Power4.easeOut }, '-=0.5', 'hd-ln');
-        td1.from('#hd-ln-5', 0.7, { y: 100, opacity: 0, ease: Power4.easeOut }, '-=0.5', 'hd-ln');
-        td1.from('#hd-tlt', 0.7, { y: -100, opacity: 0, ease: Power4.easeOut }, '-=0.5', 'hd-ln');
-        td1.from('#hd-as', 0.7, { y: 100, opacity: 0, ease: Power4.easeOut }, '-=0.5', 'hd-ln');
+
+        animationTitile1(td1, tu1, '#hd-ln-1', '#hd-ln-2', '#hd-ln-3', '#hd-ln-4', '#hd-ln-5', '#hd-tlt', '#hd-as');
         td1.from('.top-panel', 0.7, { y: -50, opacity: 0, ease: Power4.easeOut }, 'hd-ln');
 
-        tu1.set('#hd-ln-1', { x: -100, opacity: 0, ease: Power4.easeOut }, '+=0.5', 'hd-ln')
-            .to('#hd-ln-1', 0.7, { x: 0, opacity: 1, ease: Power4.easeOut }, 'hd-ln');
-        tu1.set('#hd-ln-2', { x: 100, opacity: 0, ease: Power4.easeOut }, 'hd-ln')
-            .to('#hd-ln-2', 0.7, { x: 0, opacity: 1, ease: Power4.easeOut }, 'hd-ln');
-        tu1.set('#hd-ln-3', { x: -100, opacity: 0, ease: Power4.easeOut }, 'hd-ln')
-            .to('#hd-ln-3', 0.7, { x: 0, opacity: 1, ease: Power4.easeOut }, 'hd-ln');
-        tu1.set('#hd-ln-4', { y: 100, opacity: 0, ease: Power4.easeOut }, 'hd-ln')
-            .to('#hd-ln-4', 0.7, { y: 0, opacity: 1, ease: Power4.easeOut }, 'hd-ln');
-        tu1.set('#hd-ln-5', { y: 100, opacity: 0, ease: Power4.easeOut }, 'hd-ln')
-            .to('#hd-ln-5', 0.7, { y: 0, opacity: 1, ease: Power4.easeOut }, 'hd-ln');
-        tu1.set('#hd-tlt', { y: -100, opacity: 0, ease: Power4.easeOut }, 'hd-ln')
-            .to('#hd-tlt', 0.7, { y: 0, opacity: 1, ease: Power4.easeOut }, 'hd-ln');
-        tu1.set('#hd-as', { y: 100, opacity: 0, ease: Power4.easeOut }, 'hd-ln')
-            .to('#hd-as', 0.7, { y: 0, opacity: 1, ease: Power4.easeOut }, 'hd-ln');
         tu1.set('.top-panel', { y: -50, opacity: 0, ease: Power4.easeOut }, 'hd-ln')
             .to('.top-panel', 0.7, { y: 0, opacity: 1, ease: Power4.easeOut }, 'hd-ln');
 
 
-        td2.from('#sec1-ln-1', 0.7, { x: -100, opacity: 0, ease: Power4.easeOut }, 'sec1-ln', '-=0.5');
-        td2.from('#sec1-ln-2', 0.7, { x: 100, opacity: 0, ease: Power4.easeOut }, '-=0.5', 'sec1-ln');
-        td2.from('#sec1-ln-3', 0.7, { x: -100, opacity: 0, ease: Power4.easeOut }, '-=0.5', 'sec1-ln');
-        td2.from('#sec1-ln-4', 0.7, { y: 100, opacity: 0, ease: Power4.easeOut }, '-=0.5', 'sec1-ln');
-        td2.from('#sec1-ln-5', 0.7, { y: 100, opacity: 0, ease: Power4.easeOut }, '-=0.5', 'sec1-ln');
-        td2.from('#sec1-tlt', 0.7, { y: -100, opacity: 0, ease: Power4.easeOut }, '-=0.5', 'sec1-ln');
+        animationTitile2(td2, tu2, '#sec1-ln-1', '#sec1-ln-2', '#sec1-ln-3', '#sec1-ln-4', '#sec1-ln-5', '#sec1-tlt');
         td2.from('#sec1-con', 0.7, { x: -100, opacity: 0, ease: Power4.easeOut }, '-=0.7');
-
-        tu2.set('#sec1-ln-1', { x: -100, opacity: 0, ease: Power4.easeOut }, '+=0.5', 'sec1-ln')
-            .to('#sec1-ln-1', 0.7, { x: 0, opacity: 1, ease: Power4.easeOut }, 'sec1-ln');
-        tu2.set('#sec1-ln-2', { x: 100, opacity: 0, ease: Power4.easeOut }, 'sec1-ln')
-            .to('#sec1-ln-2', 0.7, { x: 0, opacity: 1, ease: Power4.easeOut }, 'sec1-ln');
-        tu2.set('#sec1-ln-3', { x: -100, opacity: 0, ease: Power4.easeOut }, 'sec1-ln')
-            .to('#sec1-ln-3', 0.7, { x: 0, opacity: 1, ease: Power4.easeOut }, 'sec1-ln');
-        tu2.set('#sec1-ln-4', { y: 100, opacity: 0, ease: Power4.easeOut }, 'sec1-ln')
-            .to('#sec1-ln-4', 0.7, { y: 0, opacity: 1, ease: Power4.easeOut }, 'sec1-ln');
-        tu2.set('#sec1-ln-5', { y: 100, opacity: 0, ease: Power4.easeOut }, 'sec1-ln')
-            .to('#sec1-ln-5', 0.7, { y: 0, opacity: 1, ease: Power4.easeOut }, 'sec1-ln');
-        tu2.set('#sec1-tlt', { y: -100, opacity: 0, ease: Power4.easeOut }, 'sec1-ln')
-            .to('#sec1-tlt', 0.7, { y: 0, opacity: 1, ease: Power4.easeOut }, 'sec1-ln');
         tu2.set('#sec1-con', { x: -100, opacity: 0, ease: Power4.easeOut }, 'sec1-ln')
             .to('#sec1-con', 0.7, { x: 0, opacity: 1, ease: Power4.easeOut }, 'sec1-ln');
 
@@ -334,117 +343,41 @@ $(document).ready(function() {
         tu3.set('#sec2-con3', { y: -200, opacity: 0, ease: Power4.easeOut }, 0.1, 'sec2-con-up', '+=0.5')
             .to('#sec2-con3', 0.7, { y: 0, opacity: 1, ease: Power4.easeOut }, 0.1, 'sec2-con-up', '+=0.5');
 
+        animationTitile1(td4, tu4, '#sec3-ln-1', '#sec3-ln-2', '#sec3-ln-3', '#sec3-ln-4', '#sec3-ln-5', '#sec3-tlt', '#sec3-as')
 
-        td4.from('#sec3-ln-1', 0.7, { x: -100, opacity: 0, ease: Power4.easeOut }, '-=0.5');
-        td4.from('#sec3-ln-2', 0.7, { x: 100, opacity: 0, ease: Power4.easeOut }, '-=0.5');
-        td4.from('#sec3-ln-3', 0.7, { x: -100, opacity: 0, ease: Power4.easeOut }, '-=0.5');
-        td4.from('#sec3-ln-4', 0.7, { y: 100, opacity: 0, ease: Power4.easeOut }, '-=0.5');
-        td4.from('#sec3-ln-5', 0.7, { y: 100, opacity: 0, ease: Power4.easeOut }, '-=0.5');
-        td4.from('#sec3-tlt', 0.7, { y: -100, opacity: 0, ease: Power4.easeOut }, '-=0.5');
-        td4.from('#sec3-as', 0.7, { y: 100, opacity: 0, ease: Power4.easeOut }, '-=0.5');
         td4.from('#sec3-con-1', 0.7, { x: 100, opacity: 0, ease: Power4.easeOut }, '-=0.7');
         td4.from('#sec3-con-2', 0.7, { x: 100, opacity: 0, ease: Power4.easeOut }, '-=0.7');
 
-        tu4.set('#sec3-ln-1', { x: -100, opacity: 0, ease: Power4.easeOut }, '-=0.5')
-            .to('#sec3-ln-1', 0.7, { x: 0, opacity: 1, ease: Power4.easeOut }, '-=0.5');
-        tu4.set('#sec3-ln-2', { x: 100, opacity: 0, ease: Power4.easeOut }, '-=0.5')
-            .to('#sec3-ln-2', 0.7, { x: 0, opacity: 1, ease: Power4.easeOut }, '-=0.5');
-        tu4.set('#sec3-ln-3', { x: -100, opacity: 0, ease: Power4.easeOut }, '-=0.5')
-            .to('#sec3-ln-3', 0.7, { x: 0, opacity: 1, ease: Power4.easeOut }, '-=0.5');
-        tu4.set('#sec3-ln-4', { y: 100, opacity: 0, ease: Power4.easeOut }, '-=0.5')
-            .to('#sec3-ln-4', 0.7, { y: 0, opacity: 1, ease: Power4.easeOut }, '-=0.5');
-        tu4.set('#sec3-ln-5', { y: 100, opacity: 0, ease: Power4.easeOut }, '-=0.5')
-            .to('#sec3-ln-5', 0.7, { y: 0, opacity: 1, ease: Power4.easeOut }, '-=0.5');
-        tu4.set('#sec3-tlt', { y: -100, opacity: 0, ease: Power4.easeOut }, '-=0.5')
-            .to('#sec3-tlt', 0.7, { y: 0, opacity: 1, ease: Power4.easeOut }, '-=0.5');
-        tu4.set('#sec3-as', { y: 100, opacity: 0, ease: Power4.easeOut }, '-=0.5')
-            .to('#sec3-as', 0.7, { y: 0, opacity: 1, ease: Power4.easeOut }, '-=0.5');
+
         tu4.set('#sec3-con-1', { x: -100, opacity: 0, ease: Power4.easeOut }, '-=0.7')
             .to('#sec3-con-1', 0.7, { x: 0, opacity: 1, ease: Power4.easeOut }, '-=0.7');
         tu4.set('#sec3-con-2', { x: -100, opacity: 0, ease: Power4.easeOut }, '-=0.7')
             .to('#sec3-con-2', 0.7, { x: 0, opacity: 1, ease: Power4.easeOut }, '-=0.7');
 
+        animationTitile1(td5, tu5, '#sec4-ln-1', '#sec4-ln-2', '#sec4-ln-3', '#sec4-ln-4', '#sec4-ln-5', '#sec4-tlt', '#sec4-as')
 
-        td5.from('#sec4-ln-1', 0.7, { x: -100, opacity: 0, ease: Power4.easeOut }, '-=0.5');
-        td5.from('#sec4-ln-2', 0.7, { x: 100, opacity: 0, ease: Power4.easeOut }, '-=0.5');
-        td5.from('#sec4-ln-3', 0.7, { x: -100, opacity: 0, ease: Power4.easeOut }, '-=0.5');
-        td5.from('#sec4-ln-4', 0.7, { y: 100, opacity: 0, ease: Power4.easeOut }, '-=0.5');
-        td5.from('#sec4-ln-5', 0.7, { y: 100, opacity: 0, ease: Power4.easeOut }, '-=0.5');
-        td5.from('#sec4-tlt', 0.7, { y: -100, opacity: 0, ease: Power4.easeOut }, '-=0.5');
-        td5.from('#sec4-as', 0.7, { y: 100, opacity: 0, ease: Power4.easeOut }, '-=0.5');
         td5.from('#sec4-con-1', 0.7, { x: 100, opacity: 0, ease: Power4.easeOut }, '-=0.7');
         td5.from('#sec4-con-2', 0.7, { x: 100, opacity: 0, ease: Power4.easeOut }, '-=0.7');
 
-        tu5.set('#sec4-ln-1', { x: -100, opacity: 0, ease: Power4.easeOut }, '-=0.5')
-            .to('#sec4-ln-1', 0.7, { x: 0, opacity: 1, ease: Power4.easeOut }, '-=0.5');
-        tu5.set('#sec4-ln-2', { x: 100, opacity: 0, ease: Power4.easeOut }, '-=0.5')
-            .to('#sec4-ln-2', 0.7, { x: 0, opacity: 1, ease: Power4.easeOut }, '-=0.5');
-        tu5.set('#sec4-ln-3', { x: -100, opacity: 0, ease: Power4.easeOut }, '-=0.5')
-            .to('#sec4-ln-3', 0.7, { x: 0, opacity: 1, ease: Power4.easeOut }, '-=0.5');
-        tu5.set('#sec4-ln-4', { y: 100, opacity: 0, ease: Power4.easeOut }, '-=0.5')
-            .to('#sec4-ln-4', 0.7, { y: 0, opacity: 1, ease: Power4.easeOut }, '-=0.5');
-        tu5.set('#sec4-ln-5', { y: 100, opacity: 0, ease: Power4.easeOut }, '-=0.5')
-            .to('#sec4-ln-5', 0.7, { y: 0, opacity: 1, ease: Power4.easeOut }, '-=0.5');
-        tu5.set('#sec4-tlt', { y: -100, opacity: 0, ease: Power4.easeOut }, '-=0.5')
-            .to('#sec4-tlt', 0.7, { y: 0, opacity: 1, ease: Power4.easeOut }, '-=0.5');
-        tu5.set('#sec4-as', { y: 100, opacity: 0, ease: Power4.easeOut }, '-=0.5')
-            .to('#sec4-as', 0.7, { y: 0, opacity: 1, ease: Power4.easeOut }, '-=0.5');
+
         tu5.set('#sec4-con-1', { x: 100, opacity: 0, ease: Power4.easeOut }, '-=0.7')
-            .to('#sec4-con-1', 0.7, { x: 0, opacity: 1, ease: Power4.easeOut }, '-=0.7');
+            .to('#sec4-con-1', 0.7, { x: 0, opacity: 1, ease: Power4.easeOut }, '-=0.7');   
         tu5.set('#sec4-con-2', { x: 100, opacity: 0, ease: Power4.easeOut }, '-=0.7')
             .to('#sec4-con-2', 0.7, { x: 0, opacity: 1, ease: Power4.easeOut }, '-=0.7');
 
-
-        td6.from('#sec5-ln-1', 0.7, { x: -100, opacity: 0, ease: Power4.easeOut }, 'sec5-ln', '-=0.5');
-        td6.from('#sec5-ln-2', 0.7, { x: 100, opacity: 0, ease: Power4.easeOut }, '-=0.5', 'sec5-ln');
-        td6.from('#sec5-ln-3', 0.7, { x: -100, opacity: 0, ease: Power4.easeOut }, '-=0.5', 'sec5-ln');
-        td6.from('#sec5-ln-4', 0.7, { y: 100, opacity: 0, ease: Power4.easeOut }, '-=0.5', 'sec5-ln');
-        td6.from('#sec5-ln-5', 0.7, { y: 100, opacity: 0, ease: Power4.easeOut }, '-=0.5', 'sec5-ln');
-        td6.from('#sec5-tlt', 0.7, { y: -100, opacity: 0, ease: Power4.easeOut }, '-=0.5', 'sec5-ln');
-
-        tu6.set('#sec5-ln-1', { x: -100, opacity: 0, ease: Power4.easeOut }, '+=0.5', 'sec5-ln')
-            .to('#sec5-ln-1', 0.7, { x: 0, opacity: 1, ease: Power4.easeOut }, 'sec5-ln');
-        tu6.set('#sec5-ln-2', { x: 100, opacity: 0, ease: Power4.easeOut }, 'sec5-ln')
-            .to('#sec5-ln-2', 0.7, { x: 0, opacity: 1, ease: Power4.easeOut }, 'sec5-ln');
-        tu6.set('#sec5-ln-3', { x: -100, opacity: 0, ease: Power4.easeOut }, 'sec5-ln')
-            .to('#sec5-ln-3', 0.7, { x: 0, opacity: 1, ease: Power4.easeOut }, 'sec5-ln');
-        tu6.set('#sec5-ln-4', { y: 100, opacity: 0, ease: Power4.easeOut }, 'sec5-ln')
-            .to('#sec5-ln-4', 0.7, { y: 0, opacity: 1, ease: Power4.easeOut }, 'sec5-ln');
-        tu6.set('#sec5-ln-5', { y: 100, opacity: 0, ease: Power4.easeOut }, 'sec5-ln')
-            .to('#sec5-ln-5', 0.7, { y: 0, opacity: 1, ease: Power4.easeOut }, 'sec5-ln');
-        tu6.set('#sec5-tlt', { y: -100, opacity: 0, ease: Power4.easeOut }, 'sec5-ln')
-            .to('#sec5-tlt', 0.7, { y: 0, opacity: 1, ease: Power4.easeOut }, 'sec5-ln');
+        animationTitile2(td6, tu6, '#sec5-ln-1', '#sec5-ln-2', '#sec5-ln-3', '#sec5-ln-4', '#sec5-ln-5', '#sec5-tlt')
 
 
 
-        td7.from('#sec6-ln-1', 0.7, { x: -100, opacity: 0, ease: Power4.easeOut }, 'sec6-ln', '-=0.5');
-        td7.from('#sec6-ln-2', 0.7, { x: 100, opacity: 0, ease: Power4.easeOut }, '-=0.5', 'sec6-ln');
-        td7.from('#sec6-ln-3', 0.7, { x: -100, opacity: 0, ease: Power4.easeOut }, '-=0.5', 'sec6-ln');
-        td7.from('#sec6-ln-4', 0.7, { y: 100, opacity: 0, ease: Power4.easeOut }, '-=0.5', 'sec6-ln');
-        td7.from('#sec6-ln-5', 0.7, { y: 100, opacity: 0, ease: Power4.easeOut }, '-=0.5', 'sec6-ln');
-        td7.from('#sec6-tlt', 0.7, { y: -100, opacity: 0, ease: Power4.easeOut }, '-=0.5', 'sec6-ln');
-        td7.from('#sec6-con1', 0.7, { y: -50, opacity: 0, ease: Power4.easeOut }, '-=0.5', 'sec6-ln');
-        td7.from('#sec6-con2', 0.7, { y: -50, opacity: 0, ease: Power4.easeOut }, '-=0.5', 'sec6-ln');
-        td7.from('#sec6-con3', 0.7, { y: -50, opacity: 0, ease: Power4.easeOut }, '-=0.5', 'sec6-ln');
 
-        tu7.set('#sec6-ln-1', { x: -100, opacity: 0, ease: Power4.easeOut })
-            .to('#sec6-ln-1', 0.7, { x: 0, opacity: 1, ease: Power4.easeOut }, 'sec6-ln-up');
-        tu7.set('#sec6-ln-2', { x: 100, opacity: 0, ease: Power4.easeOut }, 'sec6-ln-up')
-            .to('#sec6-ln-2', 0.7, { x: 0, opacity: 1, ease: Power4.easeOut }, 'sec6-ln-up');
-        tu7.set('#sec6-ln-3', { x: -100, opacity: 0, ease: Power4.easeOut }, 'sec6-ln-up')
-            .to('#sec6-ln-3', 0.7, { x: 0, opacity: 1, ease: Power4.easeOut }, 'sec6-ln-up');
-        tu7.set('#sec6-ln-4', { y: 100, opacity: 0, ease: Power4.easeOut }, 'sec6-ln-up')
-            .to('#sec6-ln-4', 0.7, { y: 0, opacity: 1, ease: Power4.easeOut }, 'sec6-ln-up');
-        tu7.set('#sec6-ln-5', { y: 100, opacity: 0, ease: Power4.easeOut }, 'sec6-ln-up')
-            .to('#sec6-ln-5', 0.7, { y: 0, opacity: 1, ease: Power4.easeOut }, 'sec6-ln-up');
-        tu7.set('#sec6-tlt', { y: -100, opacity: 0, ease: Power4.easeOut }, 'sec6-ln-up')
-            .to('#sec6-tlt', 0.7, { y: 0, opacity: 1, ease: Power4.easeOut }, 'sec6-ln-up');
-        tu7.set('#sec6-con1', { y: 50, opacity: 0, ease: Power4.easeOut }, 'sec6-ln-up')
-            .to('#sec6-con1', 0.7, { y: 0, opacity: 1, ease: Power4.easeOut }, 'sec6-ln-up');
-        tu7.set('#sec6-con2', { y: 50, opacity: 0, ease: Power4.easeOut }, 'sec6-ln-up')
-            .to('#sec6-con2', 0.7, { y: 0, opacity: 1, ease: Power4.easeOut }, 'sec6-ln-up');
-        tu7.set('#sec6-con3', { y: 50, opacity: 0, ease: Power4.easeOut }, 'sec6-ln-up')
-            .to('#sec6-con3', 0.7, { y: 0, opacity: 1, ease: Power4.easeOut }, 'sec6-ln-up');
+
+        animationTitile2(td7, tu7, '#sec6-ln-1', '#sec6-ln-2', '#sec6-ln-3', '#sec6-ln-4', '#sec6-ln-5', '#sec6-tlt')
+
+        td7.staggerFrom('.sec6-con', 0.7, { y: -50, opacity: 0, ease: Power4.easeOut },0.1,'-=0.5');
+
+        tu7.set('.sec6-con', { y: 50, opacity: 0, ease: Power4.easeOut }, 0.1)
+            .staggerTo('.sec6-con', 0.7, { y: 0, opacity: 1, ease: Power4.easeOut }, 0.1);
+
 
 
 
@@ -452,18 +385,19 @@ $(document).ready(function() {
 
         setInterval(function() {
             setAnimation(td, tu);
+            topPanel();
         }, 100);
 
 
-    var arrow1 = new TimelineMax(),
-        arrow2 = new TimelineMax();
-    arrow1.from(rule1, 1, { cssRule: { ease: Elastic.easeOut.config(2, 0.7), x: -5 } })
-        .to(rule1, 0.5, { cssRule: { x: -5 } });
-    arrow2.from(rule2, 1, { cssRule: { ease: Elastic.easeOut.config(2, 0.7), x: 5 } })
-        .to(rule2, 0.5, { cssRule: { x: 5 } });
+        // var arrow1 = new TimelineMax(),
+        //     arrow2 = new TimelineMax();
+        // arrow1.from(rule1, 1, { cssRule: { ease: Elastic.easeOut.config(2, 0.7), x: -5 } })
+        //     .to(rule1, 0.5, { cssRule: { x: -5 } });
+        // arrow2.from(rule2, 1, { cssRule: { ease: Elastic.easeOut.config(2, 0.7), x: 5 } })
+        //     .to(rule2, 0.5, { cssRule: { x: 5 } });
 
-    arrow1.repeat(Infinity);
-    arrow2.repeat(Infinity);
+        // arrow1.repeat(Infinity);
+        // arrow2.repeat(Infinity);
     }
 
     // для инициализации tooltips
@@ -471,14 +405,14 @@ $(document).ready(function() {
     //   track: true
     // });  
     // скролл по ссылке с атрибутом href 
-    // $(".header_nav a[href*='#']").on("click", function(e) {
-    //     e.preventDefault();
-    //     var anchor = $(this);
-    //     $('html, body').stop().animate({
-    //         scrollTop: $(anchor.attr('href')).offset().top
-    //     }, 500);
-    //     return false;
-    // });
+    $(".mobile-menu a[href*='#']").on("click", function(e) {
+        e.preventDefault();
+        var anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $(anchor.attr('href')).offset().top
+        }, 500);
+        return false;
+    });
     // Скролл по классу .scroll_to и атрибуту data-scroll у кнопки к примеру (data-scroll="куда скроллим" в элементе куда скроллим ставим id потом впишем в куда скроллим)
     // $(".scroll_to").on("click", function(e) {
     //     e.preventDefault();
@@ -490,39 +424,37 @@ $(document).ready(function() {
     // });
     //  Активация слайдера
 
-    if (document.documentElement.clientWidth > 460) {
-        $(".owl-carousel").owlCarousel({
-            loop: true,
-            items: 2,
-            dots: true,
-            animateOut: 'fadeOut'
 
-        });
-    } else if (document.documentElement.clientWidth <= 460) {
-        $(".owl-carousel").owlCarousel({
-            loop: true,
-            items: 1,
-            dots: true,
-            animateOut: 'fadeOut'
+    $(".owl-carousel").owlCarousel({
+        loop: true,
+        dots: true,
+        animateOut: 'fadeOut',
+        responsiveClass: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+            461: {
+                items: 2
+            }
+        }
 
-        });
-    }
-    setInterval(function() {
+    });
 
-            topPanel();
-        }, 100)
-        // Кастомные кнопки управления слайдером
-        // var owl = $('.owl-carousel');
-        // owl.owlCarousel();
-        // $('.customNextBtn').click(function() {
-        //     owl.trigger('next.owl.carousel', [700]);
-        // });
-        // // Go to the previous item
-        // $('.customPrevBtn').click(function() {
-        //     // With optional speed parameter
-        //     // Parameters has to be in square bracket '[]'
-        //     owl.trigger('prev.owl.carousel', [700]);
-        // });
+
+
+    // Кастомные кнопки управления слайдером
+    // var owl = $('.owl-carousel');
+    // owl.owlCarousel();
+    // $('.customNextBtn').click(function() {
+    //     owl.trigger('next.owl.carousel', [700]);
+    // });
+    // // Go to the previous item
+    // $('.customPrevBtn').click(function() {
+    //     // With optional speed parameter
+    //     // Parameters has to be in square bracket '[]'
+    //     owl.trigger('prev.owl.carousel', [700]);
+    // });
 
     // Select в модальном окне
     $(document).click(function() {

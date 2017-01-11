@@ -6,8 +6,8 @@
 @media only screen and (max-width : 1700px)
 	.top-panel
 		top: 20px
-		right: 50px
-		left: inherit
+		right: 0
+		left: 80px
 	.owl-container
 		width: 620px
 	.header 
@@ -80,7 +80,7 @@
 			.icon
 				transform: scale(0.7)
 			.text
-				font-size: 17px
+				font-size: 15px
 			.item
 				min-height: 122px
 				margin-bottom: 18px
@@ -119,9 +119,6 @@
 				font-size: 31px
 		.container
 			padding-bottom: 30px
-		.video-container
-			.wrap
-				height: 280px
 
 
 	.comments-section 
@@ -184,9 +181,13 @@
 	.footer 
 		.footer-row
 			padding-bottom: 20px
-@media only screen and (max-width : 1200px)
 	.row
 		margin: 0
+	.service
+		.title
+			font-size: 18px
+@media only screen and (max-width : 1200px)
+
 	/**/
 	// для фиксированного сайта
 	// body
@@ -208,7 +209,7 @@
 	.section 
 		min-height: 670px
 	.owl-container
-		width: 580px
+		width: 566px
 	.header
 		height: auto
 		.slider 
@@ -217,6 +218,7 @@
 			.owl-title
 				padding-right: 50px
 			.owl-item
+				padding: 0
 				.owl-wrap
 					width: 177px
 					margin: auto
@@ -235,7 +237,6 @@
 			height: auto
 			display: flex
 			flex-wrap: wrap
-			margin: -1px
 			.content
 				position: static
 				display: flex
@@ -246,10 +247,7 @@
 			margin-left: auto
 			&:before
 				left: 5px
-		.title
-			font-size: 18px
-			p	
-				display: inline
+		
 		.service-container
 			display: flex
 
@@ -283,6 +281,15 @@
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
 	/**/
+	.lang
+		padding: 0 24px
+		&:before
+			display: none
+		a
+			&:after
+				right: 3px
+		.dinamic-list
+			padding: 0
 	.top-panel
 		display: none
 	.button-mobile-menu
@@ -414,8 +421,12 @@
 			width: 350px
 			margin: auto
 	.header
-		min-height: 848px
+		min-height: 890px
 	.about-us 
+		.title-container
+			height: auto
+			.title
+				font-size: 26px
 		.content
 			padding: 20px 30px 70px
 			width: 454px
@@ -426,6 +437,7 @@
 			padding: 66px 0 0
 			.title
 				font-size: 48px
+				margin-bottom: 15px
 			.aside
 				font-size: 17px
 	.maps-container
@@ -447,18 +459,24 @@
 			padding: 35px 0
 	.comments-section 
 		.title-container
-			width: 350px
+			width: 360px
 			margin: auto
+			height: auto
+			padding: 30px 0
+			line-height: 34px
 			.title
-				font-size: 21px
+				font-size: 26px
 		.comments-wrap
 			height: auto
 	.video-section 
 		.title-container
-			width: 350px
+			width: 360px
 			margin: auto
+			height: auto
+			padding: 30px 0
+			line-height: 34px
 			.title
-				font-size: 21px
+				font-size: 26px
 		.video-container 
 			.wrap
 				width: 100%
@@ -466,10 +484,13 @@
 				height: auto
 	.footer 
 		.title-container
-			width: 350px
+			width: 360px
 			margin: auto
+			height: auto
+			padding: 30px 0
+			line-height: 34px
 			.title
-				font-size: 21px
+				font-size: 26px
 	.footer 
 		.contacts-container
 			padding-left: 0
@@ -484,6 +505,30 @@
 				font-size: 20px
 			p
 				font-size: 16px
+	.header 
+		.title-container 	
+			.aside-container
+				position: static
+	.person-1,
+	.person-2
+		.about-person
+			.title-container
+				height: auto
+				padding: 0
+				text-align: left
+				.aside-container
+					position: static
+			.content
+				.title
+					font-size: 26px
+					padding: 0
+				.aside
+					padding: 0
+	.service 
+		.title
+			font-size: 26px
+			margin-bottom: 35px
+			line-height: 36px
 	/*Disable Animation on Mobile Devices*/
 	.animated
 		/*CSS transitions*/
@@ -526,13 +571,6 @@
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 580px)
 	.header 
-		.title-container 
-			height: 108px
-			padding: 51px 0 0
-			.title
-				font-size: 38px
-			.aside
-				font-size: 14px
 		.slider
 			.owl-item
 				.owl-wrap
@@ -571,25 +609,7 @@
 	.header 
 		.title-container 
 			height: auto
-			padding: 50px 0 0
-			.title
-				padding: 0 20px
-				font-size: 50px
-			.aside-container
-				position: static
-			.aside	
-				font-size: 12px
-	.person-1,
-	.person-2
-		.about-person
-			.title-container
-				height: auto
-				.aside-container
-					position: static
-			.content
-				.title
-					font-size: 23px
-					padding: 0
+	
 	.video-section,
 	.comments-section,
 	.footer, 
@@ -645,9 +665,6 @@
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 380px)
 	.about-us 
-		.title-container
-			.title
-				font-size: 20px
 		.mobile-intent
 			padding: 0
 	.comments-section,
@@ -655,8 +672,6 @@
 	.video-section 
 		.title-container
 			width: 300px
-			.title
-				font-size: 19px
 
 	.popup2
 		.dm-modal

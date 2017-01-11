@@ -9,15 +9,15 @@ $(function() {
 });
 
 function animationTitile1(td, tu, ln1, ln2, ln3, ln4, ln5, tlt, text) {
-    td.from(ln1, 0.7, { x: -100, opacity: 0, ease: Expo.easeOut }, 'ln');
-    td.from(ln2, 0.7, { x: 100, opacity: 0, ease: Expo.easeOut }, 'ln');
-    td.from(ln3, 0.7, { x: -100, opacity: 0, ease: Expo.easeOut }, 'ln');
-    td.from(ln4, 0.7, { y: 100, opacity: 0, ease: Expo.easeOut }, 'ln');
-    td.from(ln5, 0.7, { y: 100, opacity: 0, ease: Expo.easeOut }, 'ln');
-    td.from(tlt, 0.7, { y: -100, opacity: 0, ease: Expo.easeOut }, 'ln');
-    td.from(text, 0.7, { y: 100, opacity: 0, ease: Expo.easeOut }, 'ln');
+    td.from(ln1, 1, { x: -100, opacity: 0, ease: Expo.easeOut }, 'lable', '+=0.5')
+        .from(ln2, 1, { x: 100, opacity: 0, ease: Expo.easeOut }, 'lable')
+        .from(ln3, 1, { x: -100, opacity: 0, ease: Expo.easeOut }, 'lable')
+        .from(ln4, 1, { y: 100, opacity: 0, ease: Expo.easeOut }, 'lable')
+        .from(ln5, 1, { y: 100, opacity: 0, ease: Expo.easeOut }, 'lable')
+        .from(tlt, 1, { y: -100, opacity: 0, ease: Expo.easeOut }, 'lable')
+        .from(text, 1, { y: 100, opacity: 0, ease: Expo.easeOut }, 'lable');
 
-    tu.set(ln1, { x: -100, opacity: 0, ease: Expo.easeOut }, '+=0.5', 'ln')
+    tu.set(ln1, { x: -100, opacity: 0, ease: Expo.easeOut }, 'ln', '+=0.5')
         .to(ln1, 1, { x: 0, opacity: 1, ease: Expo.easeOut }, 'ln');
     tu.set(ln2, { x: 100, opacity: 0, ease: Expo.easeOut }, 'ln')
         .to(ln2, 1, { x: 0, opacity: 1, ease: Expo.easeOut }, 'ln');
@@ -34,14 +34,14 @@ function animationTitile1(td, tu, ln1, ln2, ln3, ln4, ln5, tlt, text) {
 }
 
 function animationTitile2(td, tu, ln1, ln2, ln3, ln4, ln5, tlt) {
-    td.from(ln1, 0.7, { x: -100, opacity: 0, ease: Expo.easeOut }, 'ln');
-    td.from(ln2, 0.7, { x: 100, opacity: 0, ease: Expo.easeOut }, 'ln');
-    td.from(ln3, 0.7, { x: -100, opacity: 0, ease: Expo.easeOut }, 'ln');
-    td.from(ln4, 0.7, { y: 100, opacity: 0, ease: Expo.easeOut }, 'ln');
-    td.from(ln5, 0.7, { y: 100, opacity: 0, ease: Expo.easeOut }, 'ln');
-    td.from(tlt, 0.7, { y: -100, opacity: 0, ease: Expo.easeOut }, 'ln');
+    td.from(ln1, 1, { x: -100, opacity: 0, ease: Expo.easeOut }, 'ln');
+    td.from(ln2, 1, { x: 100, opacity: 0, ease: Expo.easeOut }, 'ln');
+    td.from(ln3, 1, { x: -100, opacity: 0, ease: Expo.easeOut }, 'ln');
+    td.from(ln4, 1, { y: 100, opacity: 0, ease: Expo.easeOut }, 'ln');
+    td.from(ln5, 1, { y: 100, opacity: 0, ease: Expo.easeOut }, 'ln');
+    td.from(tlt, 1, { y: -100, opacity: 0, ease: Expo.easeOut }, 'ln');
 
-    tu.set(ln1, { x: -100, opacity: 0, ease: Expo.easeOut }, '+=0.5', 'ln')
+    tu.set(ln1, { x: -100, opacity: 0, ease: Expo.easeOut }, 'ln', '+=0.5')
         .to(ln1, 1, { x: 0, opacity: 1, ease: Expo.easeOut }, 'ln');
     tu.set(ln2, { x: 100, opacity: 0, ease: Expo.easeOut }, 'ln')
         .to(ln2, 1, { x: 0, opacity: 1, ease: Expo.easeOut }, 'ln');
@@ -85,12 +85,77 @@ function buttonMobileMenu() {
 function langList() {
     $('.lang').click(function() {
         $(this).find(".dinamic-list").toggle("drop", { direction: "up" }, 200);
-    })
+        $(this).toggleClass('active');
+    });
 }
+
+
+// function relodePage() {
+//     if(limitRelode == 0){
+//             wf = document.documentElement.clientWidth;
+//             hf = document.documentElement.clientHeight;
+//         limitRelode++;
+//     }
+
+
+
+
+//     if (limitRelode == 1) {
+//         var hs = document.documentElement.clientHeight,
+//             ws = document.documentElement.clientWidth;
+
+//         console.log(wf);
+//             if(wf != ws){
+//                 console.log();
+//                  ws = document.documentElement.clientWidth
+//             }
+
+
+//         if (wf > 1366 && ws < 1366 && hf > 650 && hs < 650) {
+//             location.reload();
+//         }
+//     }
+// }
+
+
+var statusWF = 0,
+    statusWS = 0,
+    statusHF = 0,
+    statusHS = 0;
+
+function relodePage() {
+
+
+    if(document.documentElement.clientWidth > 1366){
+        statusWF = 1; 
+     
+    }
+     if(document.documentElement.clientWidth < 1366){
+        statusWS = 3; 
+    }
+    if(document.documentElement.clientHeight > 650){
+        statusHF = 1; 
+     
+    }
+     if(document.documentElement.clientHeight < 650){
+        statusHS = 3; 
+    }
+    if(statusWF == 1 && statusWS == 3 || statusHF == 1 && statusHS == 3){
+        location.reload();
+    }
+}
+
 $(window).resize(function() {
 
     border1();
     border2();
+    relodePage();
+
+
+
+
+    // location.reload();
+
 
 });
 
@@ -134,7 +199,7 @@ function setAnimation(down, up) {
                 if (limit == 0) {
                     if (thisSection < nextSection) {
                         // вызов анимации по скроллу вниз
-                        down[i].duration(2);
+                        down[i].duration(2.5);
                         down[i].play(0);
                         for (var k = 0; k < section.length; k++) {
                             // удаление всех классов animation, кроме активной секции 
@@ -146,6 +211,7 @@ function setAnimation(down, up) {
                     }
                     if (thisSection > nextSection) {
                         // вызов анимации по скроллу вверх
+                        up[i].duration(2);
                         up[i].play(0);
                         for (var k = 0; k < section.length; k++) {
                             if (k != i) {
@@ -262,14 +328,15 @@ $(document).ready(function() {
 
 
 
-    if (document.documentElement.clientWidth > 1200 && md.mobile() != "iPad") {
+    if (document.documentElement.clientWidth > 1366 && md.mobile() != "iPad") {
 
         $('.main').fullpage({
             anchors: ['1', '2', '3', '4', '5', '6', '7', '8'],
             menu: '#desktop-menu',
             css3: true,
             navigation: true,
-            responsiveWidth: 1200
+            responsiveWidth: 1366,
+            responsiveHeight: 650
         });
 
 
@@ -320,10 +387,10 @@ $(document).ready(function() {
         // секция 1
 
         animationTitile1(td1, tu1, '#hd-ln-1', '#hd-ln-2', '#hd-ln-3', '#hd-ln-4', '#hd-ln-5', '#hd-tlt', '#hd-as');
-        td1.from('.top-panel', 0.7, { y: -50, opacity: 0, ease: Power4.easeOut }, 'hd-ln');
+        td1.from('.top-panel', 0.7, { y: -50, opacity: 0, ease: Power4.easeOut }, '-=0.7');
 
-        tu1.set('.top-panel', { y: -50, opacity: 0, ease: Power4.easeOut }, 'hd-ln')
-            .to('.top-panel', 0.7, { y: 0, opacity: 1, ease: Power4.easeOut }, 'hd-ln');
+        tu1.set('.top-panel', { y: -50, opacity: 0, ease: Power4.easeOut }, '-=0.7', 'hd-ln')
+            .to('.top-panel', 0.7, { y: 0, opacity: 1, ease: Power4.easeOut }, '-=0.7', 'hd-ln');
 
 
         animationTitile2(td2, tu2, '#sec1-ln-1', '#sec1-ln-2', '#sec1-ln-3', '#sec1-ln-4', '#sec1-ln-5', '#sec1-tlt');
@@ -361,7 +428,7 @@ $(document).ready(function() {
 
 
         tu5.set('#sec4-con-1', { x: 100, opacity: 0, ease: Power4.easeOut }, '-=0.7')
-            .to('#sec4-con-1', 0.7, { x: 0, opacity: 1, ease: Power4.easeOut }, '-=0.7');   
+            .to('#sec4-con-1', 0.7, { x: 0, opacity: 1, ease: Power4.easeOut }, '-=0.7');
         tu5.set('#sec4-con-2', { x: 100, opacity: 0, ease: Power4.easeOut }, '-=0.7')
             .to('#sec4-con-2', 0.7, { x: 0, opacity: 1, ease: Power4.easeOut }, '-=0.7');
 
@@ -373,7 +440,7 @@ $(document).ready(function() {
 
         animationTitile2(td7, tu7, '#sec6-ln-1', '#sec6-ln-2', '#sec6-ln-3', '#sec6-ln-4', '#sec6-ln-5', '#sec6-tlt')
 
-        td7.staggerFrom('.sec6-con', 0.7, { y: -50, opacity: 0, ease: Power4.easeOut },0.1,'-=0.5');
+        td7.staggerFrom('.sec6-con', 0.7, { y: -50, opacity: 0, ease: Power4.easeOut }, 0.1, '-=0.5');
 
         tu7.set('.sec6-con', { y: 50, opacity: 0, ease: Power4.easeOut }, 0.1)
             .staggerTo('.sec6-con', 0.7, { y: 0, opacity: 1, ease: Power4.easeOut }, 0.1);
@@ -527,15 +594,6 @@ $(document).ready(function() {
         if (window.matchMedia("(max-width: 992px)").matches) {
 
             $("body").css({ "overflow": "hidden" });
-        }
-        if (document.documentElement.clientWidth > 1200 && md.mobile() != "iPad") {
-            var i = document.documentElement.clientWidth;
-            console.log(i)
-            $('.main').fullpage({
-
-            });
-
-
         }
     });
     // overlay для закрытия

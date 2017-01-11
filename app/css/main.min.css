@@ -1445,7 +1445,7 @@ body input:focus:required:invalid,body input:required:valid,body textarea:focus:
 .header .slider .owl-item .owl-wrap:after{content:'';width:263px;height:225px;display:block;position:absolute;background:url(../img/slider-border.png) no-repeat;top:0;right:-54px;z-index:-1}
 .about-us{min-height:700px;background:url(../img/background-2.png);position:relative}
 .service .content .icon.book,.service .content .icon.castle,.service .content .icon.comp,.service .content .icon.docs,.service .content .icon.garm,.service .content .icon.hammer,.service .content .icon.key,.service .content .icon.lamp,.service .content .icon.plane,.service .content .icon.planet,.service .content .icon.setting,.service .link-give:before{background-image:url(../img/sprite.png)}
-.about-us .decor-img{position:absolute;right:0;bottom:0;width:50%}
+.about-us .decor-img{position:absolute;right:0;bottom:0;width:50%;max-height:100%}
 .about-us .title-container{position:relative;height:145px;display:inline-block;text-align:center;z-index:0;margin-bottom:84px;padding:75px 0 0}
 .about-us .title{color:#dbb585;font-size:36px;display:inline}
 .about-us .title .text{position:absolute;width:495px;margin:auto;left:0;right:0;top:50px}
@@ -1455,6 +1455,7 @@ body input:focus:required:invalid,body input:required:valid,body textarea:focus:
 .about-us .content .who{font-style:italic;margin-top:25px}
 .about-us .content .who .name{font-size:20px;color:#fff}
 .about-us .content .who .skill{color:#9e9e9e;font-size:16px}
+.service{min-height:650px}
 .service .title{color:#fff;text-align:center;font-size:32px;line-height:50px;margin-bottom:82px}
 .service .content{position:absolute;top:-webkit-calc(50% - 334px);top:calc(50% - 334px);text-align:center}
 .service .content .icon{display:inline-block}
@@ -1476,17 +1477,19 @@ body input:focus:required:invalid,body input:required:valid,body textarea:focus:
 .service .link-give{color:#dbb585;display:inline-block;border:1px solid;padding:18px 90px;position:relative;font-size:25px;-webkit-transition:.2s;transition:.2s}
 .comments-section .border .line-4,.video-section .border .line-4{border-bottom:4px solid #dbb585}
 .service .link-give:before{content:'';position:absolute;top:-33px;left:40px;display:inline-block;-webkit-transition:.2s;transition:.2s;background-position:0 0;width:327px;height:69px}
-.service .service_1,.service .service_2,.service .service_3{height:100vh;position:relative}
+.service .service_1,.service .service_2,.service .service_3{height:100vh;position:relative;min-height:650px}
 .service .link-give:hover{background:#dbb585;color:#000}
 .service .link-give:hover:before{top:-28px;left:35px}
 .service .service_1{background:url(../img/bg-service-1.jpg)}
 .service .service_2{background:url(../img/bg-service-2.jpg)}
 .service .service_3{background:url(../img/bg-service-3.jpg)}
+.row{margin:0}
+.container-row{height:100%}
 .person-1 .content{right:80px}
 .person-1 .photo-person{background:url(../img/person1.jpg) no-repeat}
 .person-2 .photo-person{background:url(../img/person2.jpg) no-repeat}
 .person-2 .content{left:80px}
-.person-1 .about-person,.person-2 .about-person{width:50%;height:100vh;float:left;background:#121212;position:relative}
+.person-1 .about-person,.person-2 .about-person{width:50%;height:100vh;min-height:650px;float:left;background:#121212;position:relative}
 .person-1 .about-person .content,.person-2 .about-person .content{position:absolute;right:50px;top:-webkit-calc(50% - 362px);top:calc(50% - 362px);width:490px}
 .person-1 .about-person .title-container,.person-2 .about-person .title-container{position:relative;height:140px;display:inline-block;z-index:0;margin-bottom:100px;padding:50px 0 0;text-align:center}
 .person-1 .about-person .title-container .title,.person-2 .about-person .title-container .title{color:#dbb585;font-size:36px;margin:0;display:inline-block;padding:0 50px}
@@ -1504,7 +1507,7 @@ body input:focus:required:invalid,body input:required:valid,body textarea:focus:
 .person-1 .about-person .contacts .links .icon.in,.person-2 .about-person .contacts .links .icon.in{background-image:url(../img/sprite.png);background-position:-174px -133px;width:31px;height:33px}
 .person-1 .about-person .contacts .links .icon.fb,.person-2 .about-person .contacts .links .icon.fb{background-image:url(../img/sprite.png);background-position:-112px -133px;width:31px;height:33px}
 .person-1 .about-person .contacts .links .icon.insta,.person-2 .about-person .contacts .links .icon.insta{background-image:url(../img/sprite.png);background-position:-143px -133px;width:31px;height:33px}
-.person-1 .photo-person,.person-2 .photo-person{width:50%;height:100vh;float:left;background-size:cover;background-position:center}
+.person-1 .photo-person,.person-2 .photo-person{width:50%;height:100vh;min-height:650px;float:left;background-size:cover;background-position:center}
 .video-section{background:#eee;text-align:center}
 .video-section .border .line-2{border-right:4px solid #dbb585;border-top:4px solid #dbb585}
 .video-section .border .line-3{background:#dbb585}
@@ -1596,6 +1599,7 @@ body input:focus:required:invalid,body input:required:valid,body textarea:focus:
 .about-us .title-container{height:125px;padding:50px 0 0;margin:0 0 60px}
 .about-us .title-container .title{font-size:30px}
 .about-us .content{font-size:17px}
+.about-us .decor-img{max-height:690px}
 .service .title{font-size:25px;margin-bottom:37px}
 .service .content{top:-webkit-calc(50% - 293px);top:calc(50% - 293px)}
 .service .content .wrap{margin-bottom:55px}
@@ -1611,7 +1615,7 @@ body input:focus:required:invalid,body input:required:valid,body textarea:focus:
 .person-1 .about-person .about-skill,.person-2 .about-person .about-skill{margin-bottom:40px}
 .person-1 .about-person .about-skill .title-skill,.person-2 .about-person .about-skill .title-skill{margin-bottom:13px}
 .video-section .title-container{height:120px;padding:42px 0 0;margin-bottom:40px;width:542px}
-.video-section .container{padding-bottom:30px}
+.video-section .container{padding-bottom:15px}
 .comments-section .title-container{padding:42px 0 0;height:106px;width:542px}
 .comments-section .intent{margin-top:30px}
 .footer .aside,.footer .contacts-container .links{margin-top:18px}
@@ -1627,18 +1631,21 @@ body input:focus:required:invalid,body input:required:valid,body textarea:focus:
 .footer .contacts-container .links .icon{-webkit-transform:scale(.8);-ms-transform:scale(.8);transform:scale(.8)}
 .footer .footer-row{padding:15px 0 0}
 }
-@media only screen and (max-width:1366px){.comments-section .title-2,.footer .title-2,.mobile-intent,.video-section .title-2{padding-top:10px}
+@media only screen and (max-width:1366px){.mobile-intent{padding-top:10px}
+.title-2{padding-top:40px}
 .comments-section .intent{margin-bottom:10px}
 .footer .footer-row{padding-bottom:20px}
 .row{margin:0}
 .service .title{font-size:18px}
+.header{min-height:690px}
+.service .service_1,.service .service_2,.service .service_3{min-height:650px}
 }
 @media only screen and (max-width:1200px){.header_modal{margin-top:20px}
 .intermediate .intermediate_wrap{margin-bottom:20px}
 .intermediate .intermediate_wrap .intermediate_item{display:block;margin:30px auto}
 .intermediate .intermediate_wrap .modal_form_input_wrap{display:inline-block}
 .wrap-container{height:auto;margin-bottom:55px}
-.section{min-height:670px}
+.section{min-height:0}
 .owl-container{width:566px}
 .header{height:auto}
 .header .slider .owl-controls{left:-194px}
@@ -1694,7 +1701,7 @@ body input:focus:required:invalid,body input:required:valid,body textarea:focus:
 .service .col-wrap{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center}
 .service .title{margin-bottom:20px}
 .service .title p{display:block}
-.person-1 .about-person,.person-1 .photo-person,.person-2 .about-person,.person-2 .photo-person{min-height:750px}
+.person-1 .about-person,.person-1 .photo-person,.person-2 .about-person,.person-2 .photo-person{height:auto;min-height:750px}
 }
 @media only screen and (max-width:810px){.person-1 .about-person,.person-2 .about-person{position:absolute;width:400px;left:-378px;-webkit-transition:.5s;transition:.5s}
 .person-1 .about-person.active,.person-2 .about-person.active{left:0}

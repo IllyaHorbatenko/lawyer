@@ -380,6 +380,7 @@ body textarea:required:valid
 		right: 0
 		bottom: 0
 		width: 50%
+		max-height: 100%
 	.title-container
 		position: relative
 		height: 145px
@@ -423,6 +424,7 @@ body textarea:required:valid
 
 // 3я секция
 .service
+	min-height: 650px
 	.title
 		color: #fff
 		text-align: center
@@ -496,15 +498,21 @@ body textarea:required:valid
 		background: url('../img/bg-service-1.jpg')
 		height: 100vh
 		position: relative
+		min-height: 650px
 	.service_2
 		background: url('../img/bg-service-2.jpg')
 		height: 100vh
 		position: relative
+		min-height: 650px
 	.service_3
 		background: url('../img/bg-service-3.jpg')
 		height: 100vh
 		position: relative
-
+		min-height: 650px
+.row
+	margin: 0
+.container-row
+	height: 100%
 
 // секция 4
 .person-1
@@ -523,6 +531,7 @@ body textarea:required:valid
 	.about-person
 		width: 50%
 		height: 100vh
+		min-height: 650px
 		float: left
 		background: #121212
 		position: relative
@@ -596,6 +605,7 @@ body textarea:required:valid
 	.photo-person
 		width: 50%
 		height: 100vh
+		min-height: 650px
 		float: left
 		background-size: cover 
 		background-position: center

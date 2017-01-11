@@ -55,6 +55,11 @@ function animationTitile2(td, tu, ln1, ln2, ln3, ln4, ln5, tlt) {
         .to(tlt, 1, { y: 0, opacity: 1, ease: Expo.easeOut }, 'ln');
 }
 
+function animation() {
+
+}
+
+
 function activeMenuElem(elem) {
     elem.click(function() {
         elem.each(function() {
@@ -90,73 +95,17 @@ function langList() {
 }
 
 
-// function relodePage() {
-//     if(limitRelode == 0){
-//             wf = document.documentElement.clientWidth;
-//             hf = document.documentElement.clientHeight;
-//         limitRelode++;
-//     }
 
-
-
-
-//     if (limitRelode == 1) {
-//         var hs = document.documentElement.clientHeight,
-//             ws = document.documentElement.clientWidth;
-
-//         console.log(wf);
-//             if(wf != ws){
-//                 console.log();
-//                  ws = document.documentElement.clientWidth
-//             }
-
-
-//         if (wf > 1366 && ws < 1366 && hf > 650 && hs < 650) {
-//             location.reload();
-//         }
-//     }
-// }
-
-
-var statusWF = 0,
-    statusWS = 0,
-    statusHF = 0,
-    statusHS = 0;
-
-function relodePage() {
-
-
-    if(document.documentElement.clientWidth > 1366){
-        statusWF = 1; 
-     
-    }
-     if(document.documentElement.clientWidth < 1366){
-        statusWS = 3; 
-    }
-    if(document.documentElement.clientHeight > 650){
-        statusHF = 1; 
-     
-    }
-     if(document.documentElement.clientHeight < 650){
-        statusHS = 3; 
-    }
-    if(statusWF == 1 && statusWS == 3 || statusHF == 1 && statusHS == 3){
-        location.reload();
-    }
-}
 
 $(window).resize(function() {
 
     border1();
     border2();
-    relodePage();
-
-
-
-
-    // location.reload();
-
-
+    //relodePage();
+    if (document.documentElement.clientWidth >= 1366 && document.documentElement.clientHeight < 650) {
+        $('.title-2').css('padding-top', "40px");
+        console.log('aassc')
+    } else $('.title-2').css('padding-top', "0");
 });
 
 
@@ -297,18 +246,22 @@ function aboutPhoto() {
 
 function topPanel() {
 
+    if (document.documentElement.clientWidth > 992) {
+        $('.section').each(function() {
+            if ($(this).hasClass('active')) {
+                var dataAttr = $(this).data('anchor');
+                if (dataAttr != 1) {
+                    $(".top-panel").hide("fade", 200);
+                } else {
 
-    $('.section').each(function() {
-        if ($(this).hasClass('active')) {
-            var dataAttr = $(this).data('anchor');
-            if (dataAttr != 1) {
-                $(".top-panel").hide("fade", 200);
-            } else {
-
-                $(".top-panel").show("fade", 200);
+                    $(".top-panel").show("fade", 200);
+                }
             }
-        }
-    });
+        });
+    } else {
+        $(".top-panel").hide();
+    }
+
 }
 $(document).ready(function() {
 
@@ -317,6 +270,11 @@ $(document).ready(function() {
     langList();
     aboutPhoto();
     buttonMobileMenu();
+
+    if (document.documentElement.clientWidth >= 1366 && document.documentElement.clientHeight < 650) {
+        $('.title-2').css('padding-top', "40px");
+    } else $('.title-2').css('padding-top', "0");
+
 
 
     var md = new MobileDetect(window.navigator.userAgent);
@@ -327,17 +285,37 @@ $(document).ready(function() {
         ' Version/4.0 Mobile Safari/534.30');
 
 
-
-    if (document.documentElement.clientWidth > 1366 && md.mobile() != "iPad") {
-
+    if (document.documentElement.clientWidth >= 1024) {
         $('.main').fullpage({
             anchors: ['1', '2', '3', '4', '5', '6', '7', '8'],
             menu: '#desktop-menu',
             css3: true,
             navigation: true,
             responsiveWidth: 1366,
-            responsiveHeight: 650
+
+            responsiveHeight: 650,
+            responsiveSlides: true,
+            afterResponsive: function(isResponsive) {
+                resetSliders: true;
+                if (isResponsive == false) {
+
+                }
+            }
+
         });
+        $(window).resize(function() {
+            $('.fp-tableCell').css('height', document.documentElement.clientHeight);
+            $('.fp-section').css('height', document.documentElement.clientHeight);
+            topPanel();
+            if (document.documentElement.clientWidth < 1366) {
+                $('.fp-tableCell').css('height', 'auto');
+                $('.fp-section').css('height', 'auto');
+            }
+        });
+    }
+
+
+    if (document.documentElement.clientWidth >= 1366 && document.documentElement.clientHeight >= 650 && md.mobile() != "iPad") {
 
 
 
@@ -453,6 +431,7 @@ $(document).ready(function() {
         setInterval(function() {
             setAnimation(td, tu);
             topPanel();
+
         }, 100);
 
 

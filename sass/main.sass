@@ -238,7 +238,7 @@ body textarea:required:valid
 .header
 	.wrap-position
 		position: absolute
-		top: calc(50% - 288px)
+		top: calc(50% - 322px)
 		left: 0
 		right: 0 
 		margin: auto
@@ -375,6 +375,7 @@ body textarea:required:valid
 	min-height: 700px
 	background: url('../img/background-2.png')
 	position: relative
+	height: 100vh
 	.decor-img
 		position: absolute
 		right: 0
@@ -425,6 +426,7 @@ body textarea:required:valid
 // 3я секция
 .service
 	min-height: 650px
+	background: #000
 	.title
 		color: #fff
 		text-align: center
@@ -445,22 +447,27 @@ body textarea:required:valid
 			&.planet
 				@include sprite($planet)
 			&.setting
+				margin-top: -11px;
 				@include sprite($setting)
 			&.hammer
 				@include sprite($hammer)
 			&.docs
+				margin-bottom: 4px
 				@include sprite($docs)
 			&.people
 				@include sprite($people)
 			&.book
+				margin-bottom: 9px
 				@include sprite($book)
 			&.comp
 				@include sprite($comp)
 			&.garm
+				margin-top: -18px
 				@include sprite($garm)
 			&.lamp
 				@include sprite($lamp)
 			&.key
+				margin-top: -3px
 				@include sprite($key)
 		.text
 			color: #fff
@@ -874,7 +881,7 @@ body textarea:required:valid
 	width: 100%
 	&.active
 		right: 0
-	ul
+	.mobile_navigation
 		padding-top: 107px
 		position: relative
 		z-index: 1
@@ -911,8 +918,8 @@ body textarea:required:valid
 	position: absolute
 	right: -29px
 	top: 90px
-	border-radius: 10px
-	width: 51px
+	border-radius: 0 10px 10px 0
+	width: 29px
 	height: 49px
 	.arrow
 		border: none

@@ -1,4 +1,4 @@
-$(function() {
+$(function () {
 
     //SVG Fallback
     // if(!Modernizr.svg) {
@@ -9,50 +9,50 @@ $(function() {
 });
 
 function animationTitile1(td, tu, ln1, ln2, ln3, ln4, ln5, tlt, text) {
-    td.from(ln1, 1, { x: -100, opacity: 0, ease: Expo.easeOut }, 'lable', '+=0.5')
-        .from(ln2, 1, { x: 100, opacity: 0, ease: Expo.easeOut }, 'lable')
-        .from(ln3, 1, { x: -100, opacity: 0, ease: Expo.easeOut }, 'lable')
-        .from(ln4, 1, { y: 100, opacity: 0, ease: Expo.easeOut }, 'lable')
-        .from(ln5, 1, { y: 100, opacity: 0, ease: Expo.easeOut }, 'lable')
-        .from(tlt, 1, { y: -100, opacity: 0, ease: Expo.easeOut }, 'lable')
-        .from(text, 1, { y: 100, opacity: 0, ease: Expo.easeOut }, 'lable');
+    td.from(ln1, 1, {x: -100, opacity: 0, ease: Expo.easeOut}, 'lable', '+=0.5')
+        .from(ln2, 1, {x: 100, opacity: 0, ease: Expo.easeOut}, 'lable')
+        .from(ln3, 1, {x: -100, opacity: 0, ease: Expo.easeOut}, 'lable')
+        .from(ln4, 1, {y: 100, opacity: 0, ease: Expo.easeOut}, 'lable')
+        .from(ln5, 1, {y: 100, opacity: 0, ease: Expo.easeOut}, 'lable')
+        .from(tlt, 1, {y: -100, opacity: 0, ease: Expo.easeOut}, 'lable')
+        .from(text, 1, {y: 100, opacity: 0, ease: Expo.easeOut}, 'lable');
 
-    tu.set(ln1, { x: -100, opacity: 0, ease: Expo.easeOut }, 'ln', '+=0.5')
-        .to(ln1, 1, { x: 0, opacity: 1, ease: Expo.easeOut }, 'ln');
-    tu.set(ln2, { x: 100, opacity: 0, ease: Expo.easeOut }, 'ln')
-        .to(ln2, 1, { x: 0, opacity: 1, ease: Expo.easeOut }, 'ln');
-    tu.set(ln3, { x: -100, opacity: 0, ease: Expo.easeOut }, 'ln')
-        .to(ln3, 1, { x: 0, opacity: 1, ease: Expo.easeOut }, 'ln');
-    tu.set(ln4, { y: 100, opacity: 0, ease: Expo.easeOut }, 'ln')
-        .to(ln4, 1, { y: 0, opacity: 1, ease: Expo.easeOut }, 'ln');
-    tu.set(ln5, { y: 100, opacity: 0, ease: Expo.easeOut }, 'ln')
-        .to(ln5, 1, { y: 0, opacity: 1, ease: Expo.easeOut }, 'ln');
-    tu.set(tlt, { y: -100, opacity: 0, ease: Expo.easeOut }, 'ln')
-        .to(tlt, 1, { y: 0, opacity: 1, ease: Expo.easeOut }, 'ln');
-    tu.set(text, { y: 100, opacity: 0, ease: Expo.easeOut }, 'ln')
-        .to(text, 1, { y: 0, opacity: 1, ease: Expo.easeOut }, 'ln');
+    tu.set(ln1, {x: -100, opacity: 0, ease: Expo.easeOut}, 'ln', '+=0.5')
+        .to(ln1, 1, {x: 0, opacity: 1, ease: Expo.easeOut}, 'ln');
+    tu.set(ln2, {x: 100, opacity: 0, ease: Expo.easeOut}, 'ln')
+        .to(ln2, 1, {x: 0, opacity: 1, ease: Expo.easeOut}, 'ln');
+    tu.set(ln3, {x: -100, opacity: 0, ease: Expo.easeOut}, 'ln')
+        .to(ln3, 1, {x: 0, opacity: 1, ease: Expo.easeOut}, 'ln');
+    tu.set(ln4, {y: 100, opacity: 0, ease: Expo.easeOut}, 'ln')
+        .to(ln4, 1, {y: 0, opacity: 1, ease: Expo.easeOut}, 'ln');
+    tu.set(ln5, {y: 100, opacity: 0, ease: Expo.easeOut}, 'ln')
+        .to(ln5, 1, {y: 0, opacity: 1, ease: Expo.easeOut}, 'ln');
+    tu.set(tlt, {y: -100, opacity: 0, ease: Expo.easeOut}, 'ln')
+        .to(tlt, 1, {y: 0, opacity: 1, ease: Expo.easeOut}, 'ln');
+    tu.set(text, {y: 100, opacity: 0, ease: Expo.easeOut}, 'ln')
+        .to(text, 1, {y: 0, opacity: 1, ease: Expo.easeOut}, 'ln');
 }
 
 function animationTitile2(td, tu, ln1, ln2, ln3, ln4, ln5, tlt) {
-    td.from(ln1, 1, { x: -100, opacity: 0, ease: Expo.easeOut }, 'ln');
-    td.from(ln2, 1, { x: 100, opacity: 0, ease: Expo.easeOut }, 'ln');
-    td.from(ln3, 1, { x: -100, opacity: 0, ease: Expo.easeOut }, 'ln');
-    td.from(ln4, 1, { y: 100, opacity: 0, ease: Expo.easeOut }, 'ln');
-    td.from(ln5, 1, { y: 100, opacity: 0, ease: Expo.easeOut }, 'ln');
-    td.from(tlt, 1, { y: -100, opacity: 0, ease: Expo.easeOut }, 'ln');
+    td.from(ln1, 1, {x: -100, opacity: 0, ease: Expo.easeOut}, 'ln');
+    td.from(ln2, 1, {x: 100, opacity: 0, ease: Expo.easeOut}, 'ln');
+    td.from(ln3, 1, {x: -100, opacity: 0, ease: Expo.easeOut}, 'ln');
+    td.from(ln4, 1, {y: 100, opacity: 0, ease: Expo.easeOut}, 'ln');
+    td.from(ln5, 1, {y: 100, opacity: 0, ease: Expo.easeOut}, 'ln');
+    td.from(tlt, 1, {y: -100, opacity: 0, ease: Expo.easeOut}, 'ln');
 
-    tu.set(ln1, { x: -100, opacity: 0, ease: Expo.easeOut }, 'ln', '+=0.5')
-        .to(ln1, 1, { x: 0, opacity: 1, ease: Expo.easeOut }, 'ln');
-    tu.set(ln2, { x: 100, opacity: 0, ease: Expo.easeOut }, 'ln')
-        .to(ln2, 1, { x: 0, opacity: 1, ease: Expo.easeOut }, 'ln');
-    tu.set(ln3, { x: -100, opacity: 0, ease: Expo.easeOut }, 'ln')
-        .to(ln3, 1, { x: 0, opacity: 1, ease: Expo.easeOut }, 'ln');
-    tu.set(ln4, { y: 100, opacity: 0, ease: Expo.easeOut }, 'ln')
-        .to(ln4, 1, { y: 0, opacity: 1, ease: Expo.easeOut }, 'ln');
-    tu.set(ln5, { y: 100, opacity: 0, ease: Expo.easeOut }, 'ln')
-        .to(ln5, 1, { y: 0, opacity: 1, ease: Expo.easeOut }, 'ln');
-    tu.set(tlt, { y: -100, opacity: 0, ease: Expo.easeOut }, 'ln')
-        .to(tlt, 1, { y: 0, opacity: 1, ease: Expo.easeOut }, 'ln');
+    tu.set(ln1, {x: -100, opacity: 0, ease: Expo.easeOut}, 'ln', '+=0.5')
+        .to(ln1, 1, {x: 0, opacity: 1, ease: Expo.easeOut}, 'ln');
+    tu.set(ln2, {x: 100, opacity: 0, ease: Expo.easeOut}, 'ln')
+        .to(ln2, 1, {x: 0, opacity: 1, ease: Expo.easeOut}, 'ln');
+    tu.set(ln3, {x: -100, opacity: 0, ease: Expo.easeOut}, 'ln')
+        .to(ln3, 1, {x: 0, opacity: 1, ease: Expo.easeOut}, 'ln');
+    tu.set(ln4, {y: 100, opacity: 0, ease: Expo.easeOut}, 'ln')
+        .to(ln4, 1, {y: 0, opacity: 1, ease: Expo.easeOut}, 'ln');
+    tu.set(ln5, {y: 100, opacity: 0, ease: Expo.easeOut}, 'ln')
+        .to(ln5, 1, {y: 0, opacity: 1, ease: Expo.easeOut}, 'ln');
+    tu.set(tlt, {y: -100, opacity: 0, ease: Expo.easeOut}, 'ln')
+        .to(tlt, 1, {y: 0, opacity: 1, ease: Expo.easeOut}, 'ln');
 }
 
 function animation() {
@@ -61,8 +61,8 @@ function animation() {
 
 
 function activeMenuElem(elem) {
-    elem.click(function() {
-        elem.each(function() {
+    elem.click(function () {
+        elem.each(function () {
             if ($(this) != elem) {
                 elem.removeClass("active");
             }
@@ -76,7 +76,7 @@ function buttonMobileMenu() {
         content = $('.main'),
         selectElem = $(".mobile_navigation a");
 
-    button.click(function() {
+    button.click(function () {
         $(".mobile-menu").toggleClass("active");
         $(".mobile-menu .overlay").toggleClass("active");
         $('body').toggleClass('overflow');
@@ -88,24 +88,31 @@ function buttonMobileMenu() {
 }
 
 function langList() {
-    $('.lang').click(function() {
-        $(this).find(".dinamic-list").toggle("drop", { direction: "up" }, 200);
+    $('.lang').click(function () {
+        $(this).find(".dinamic-list").toggle("drop", {direction: "up"}, 200);
         $(this).toggleClass('active');
     });
 }
 
 
-
-
-$(window).resize(function() {
+$(window).resize(function () {
 
     border1();
     border2();
     //relodePage();
     if (document.documentElement.clientWidth >= 1366 && document.documentElement.clientHeight < 650) {
-        $('.title-2').css('padding-top', "40px");
-        console.log('aassc')
-    } else $('.title-2').css('padding-top', "0");
+        $('.title-2').css('padding', "40px");
+        $('.comments-section .intent').css('padding-bottom', "40px");
+    } else if ($('.main').hasClass('fullpage-wrapper') == false && document.documentElement.clientWidth >= 1366) {
+        $('.title-2').css('padding', "40px");
+        $('.comments-section .intent').css('padding-bottom', "40px");
+        console.log('1');
+    } else if (document.documentElement.clientWidth < 1366) {
+        $('.title-2').css('padding', "");
+        $('.comments-section .intent').css('padding-bottom', "");
+        console.log('2');
+    }
+
 });
 
 
@@ -175,6 +182,7 @@ function setAnimation(down, up) {
     }
 }
 
+
 //изменяется - для плавной обратной анимации animate.css*/
 
 /**
@@ -182,14 +190,14 @@ function setAnimation(down, up) {
  */
 
 if ('addEventListener' in document) {
-    document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('DOMContentLoaded', function () {
         FastClick.attach(document.body);
     }, false);
 }
 
 
 function border1() {
-    $('.title-1').each(function() {
+    $('.title-1').each(function () {
 
         var container = $(this).find('.border'),
             aside = $(this).find('.aside'),
@@ -203,12 +211,11 @@ function border1() {
             link5 = container.find('.line-5');
 
 
-
-        link1.css({ 'height': mainHeight - (mainHeight / 5), "width": mainWidht / 2 });
-        link2.css({ 'height': mainHeight, "width": mainWidht / 2 });
-        link3.css({ 'height': mainHeight / 10.2 });
-        link4.css({ "width": (mainWidht - asideWidht) / 2 });
-        link5.css({ "width": (mainWidht - asideWidht) / 2 });
+        link1.css({'height': mainHeight - (mainHeight / 5), "width": mainWidht / 2});
+        link2.css({'height': mainHeight, "width": mainWidht / 2});
+        link3.css({'height': mainHeight / 10.2});
+        link4.css({"width": (mainWidht - asideWidht) / 2});
+        link5.css({"width": (mainWidht - asideWidht) / 2});
     });
 
 }
@@ -216,7 +223,7 @@ function border1() {
 
 function border2() {
 
-    $('.title-2').each(function() {
+    $('.title-2').each(function () {
 
         var container = $(this).find('.border'),
             mainWidht = container.outerWidth(),
@@ -228,17 +235,17 @@ function border2() {
             link4 = container.find('.line-4'),
             link5 = container.find('.line-5');
 
-        link1.css({ 'height': mainHeight - (mainHeight / 5), "width": mainWidht / 2 });
-        link2.css({ 'height': mainHeight, "width": mainWidht / 2 });
-        link3.css({ 'height': mainHeight / 10.2 });
-        link4.css({ "width": (mainWidht - width - 20) / 2 });
-        link5.css({ "width": (mainWidht - width - 20) / 2 });
+        link1.css({'height': mainHeight - (mainHeight / 5), "width": mainWidht / 2});
+        link2.css({'height': mainHeight, "width": mainWidht / 2});
+        link3.css({'height': mainHeight / 10.2});
+        link4.css({"width": (mainWidht - width - 20) / 2});
+        link5.css({"width": (mainWidht - width - 20) / 2});
     });
 
 }
 
 function aboutPhoto() {
-    $('.about-person').click(function() {
+    $('.about-person').click(function () {
         $(this).find('.arrow').toggleClass('active');
         $(this).toggleClass('active');
     });
@@ -247,7 +254,7 @@ function aboutPhoto() {
 function topPanel() {
 
     if (document.documentElement.clientWidth > 992) {
-        $('.section').each(function() {
+        $('.section').each(function () {
             if ($(this).hasClass('active')) {
                 var dataAttr = $(this).data('anchor');
                 if (dataAttr != 1) {
@@ -263,18 +270,19 @@ function topPanel() {
     }
 
 }
-$(document).ready(function() {
+
+
+$(document).ready(function () {
 
     border1();
     border2();
     langList();
     aboutPhoto();
     buttonMobileMenu();
-
+    console.log(navigator.userAgent)
     if (document.documentElement.clientWidth >= 1366 && document.documentElement.clientHeight < 650) {
         $('.title-2').css('padding-top', "40px");
-    } else $('.title-2').css('padding-top', "0");
-
+    } else $('.title-2').css('padding-top', "");
 
 
     var md = new MobileDetect(window.navigator.userAgent);
@@ -284,174 +292,168 @@ $(document).ready(function() {
         ' Build/4.1.A.0.562) AppleWebKit/534.30 (KHTML, like Gecko)' +
         ' Version/4.0 Mobile Safari/534.30');
 
-
-    if (document.documentElement.clientWidth >= 1024) {
+    if (document.documentElement.clientWidth >= 1366 && document.documentElement.clientHeight >= 650 && md.mobile() == null) {
+        anim();
         $('.main').fullpage({
             anchors: ['1', '2', '3', '4', '5', '6', '7', '8'],
             menu: '#desktop-menu',
             css3: true,
             navigation: true,
-            responsiveWidth: 1366,
-
-            responsiveHeight: 650,
             responsiveSlides: true,
-            afterResponsive: function(isResponsive) {
-                resetSliders: true;
-                if (isResponsive == false) {
+            responsiveWidth: 1366,
+            responsiveHeight: 650,
+            afterResponsive: function (isResponsive) {
+                if (isResponsive == true) {
+                    $.fn.fullpage.setResponsive(true);
+                } else $.fn.fullpage.setResponsive(false);
 
-                }
             }
 
         });
-        $(window).resize(function() {
-            $('.fp-tableCell').css('height', document.documentElement.clientHeight);
-            $('.fp-section').css('height', document.documentElement.clientHeight);
+
+        //         if (isResponsive == true) {
+
+        //     $.fn.fullpage.setResponsive(true);
+        // } else $.fn.fullpage.setResponsive(false);
+
+        $(window).resize(function () {
+            // $('.fp-tableCell').css('height', document.documentElement.clientHeight);
+            // $('.fp-section').css('height', document.documentElement.clientHeight);
             topPanel();
-            if (document.documentElement.clientWidth < 1366) {
-                $('.fp-tableCell').css('height', 'auto');
-                $('.fp-section').css('height', 'auto');
-            }
+            // if (document.documentElement.clientWidth < 1366) {
+            //     $('.fp-tableCell').css('height', 'auto');
+            //     $('.fp-section').css('height', 'auto');
+            // }
         });
+        function anim() {
+
+            var td1 = new TimelineMax(),
+                td2 = new TimelineMax(),
+                td3 = new TimelineMax(),
+                td4 = new TimelineMax(),
+                td5 = new TimelineMax(),
+                td6 = new TimelineMax(),
+                td7 = new TimelineMax(),
+                td8 = new TimelineMax(),
+
+                tu1 = new TimelineMax(),
+                tu2 = new TimelineMax(),
+                tu3 = new TimelineMax(),
+                tu4 = new TimelineMax(),
+                tu5 = new TimelineMax(),
+                tu6 = new TimelineMax(),
+                tu7 = new TimelineMax(),
+                tu8 = new TimelineMax(),
+
+                td = [td1, td2, td3, td4, td5, td6, td7, td8],
+                tu = [tu1, tu2, tu3, tu4, tu5, tu6, td7, tu8];
+
+            td1.pause();
+            td2.pause();
+            td3.pause();
+            td4.pause();
+            td5.pause();
+            td6.pause();
+            td7.pause();
+            td8.pause();
+
+            tu1.pause();
+            tu2.pause();
+            tu3.pause();
+            tu4.pause();
+            tu5.pause();
+            tu6.pause();
+            tu7.pause();
+            tu8.pause();
+
+            // GREEN SOCKS FOR DOWN
+
+
+            // секция 1
+
+            animationTitile1(td1, tu1, '#hd-ln-1', '#hd-ln-2', '#hd-ln-3', '#hd-ln-4', '#hd-ln-5', '#hd-tlt', '#hd-as');
+            td1.from('.top-panel', 0.7, {y: -50, opacity: 0, ease: Power4.easeOut}, '-=0.7');
+
+            tu1.set('.top-panel', {y: -50, opacity: 0, ease: Power4.easeOut}, '-=0.7', 'hd-ln')
+                .to('.top-panel', 0.7, {y: 0, opacity: 1, ease: Power4.easeOut}, '-=0.7', 'hd-ln');
+
+
+            animationTitile2(td2, tu2, '#sec1-ln-1', '#sec1-ln-2', '#sec1-ln-3', '#sec1-ln-4', '#sec1-ln-5', '#sec1-tlt');
+            td2.from('#sec1-con', 0.7, {x: -100, opacity: 0, ease: Power4.easeOut}, '-=0.7');
+            tu2.set('#sec1-con', {x: -100, opacity: 0, ease: Power4.easeOut}, 'sec1-ln')
+                .to('#sec1-con', 0.7, {x: 0, opacity: 1, ease: Power4.easeOut}, 'sec1-ln');
+
+
+            td3.staggerFrom('#sec2-con1', 0.7, {y: -200, opacity: 0, ease: Power4.easeOut}, 0.1, 'sec2-con');
+            td3.staggerFrom('#sec2-con2', 0.7, {y: -200, opacity: 0, ease: Power4.easeOut}, 0.1, 'sec2-con');
+            td3.staggerFrom('#sec2-con3', 0.7, {y: -200, opacity: 0, ease: Power4.easeOut}, 0.1, 'sec2-con');
+
+            tu3.set('#sec2-con1', {y: -200, opacity: 0, ease: Power4.easeOut}, 0.1, 'sec2-con-up', '+=0.5')
+                .to('#sec2-con1', 0.7, {y: 0, opacity: 1, ease: Power4.easeOut}, 0.1, 'sec2-con-up', '+=0.5');
+            tu3.set('#sec2-con2', {y: -200, opacity: 0, ease: Power4.easeOut}, 0.1, 'sec2-con-up', '+=0.5')
+                .to('#sec2-con2', 0.7, {y: 0, opacity: 1, ease: Power4.easeOut}, 0.1, 'sec2-con-up', '+=0.5');
+            tu3.set('#sec2-con3', {y: -200, opacity: 0, ease: Power4.easeOut}, 0.1, 'sec2-con-up', '+=0.5')
+                .to('#sec2-con3', 0.7, {y: 0, opacity: 1, ease: Power4.easeOut}, 0.1, 'sec2-con-up', '+=0.5');
+
+            animationTitile1(td4, tu4, '#sec3-ln-1', '#sec3-ln-2', '#sec3-ln-3', '#sec3-ln-4', '#sec3-ln-5', '#sec3-tlt', '#sec3-as')
+
+            td4.from('#sec3-con-1', 0.7, {x: 100, opacity: 0, ease: Power4.easeOut}, '-=0.7');
+            td4.from('#sec3-con-2', 0.7, {x: 100, opacity: 0, ease: Power4.easeOut}, '-=0.7');
+
+
+            tu4.set('#sec3-con-1', {x: -100, opacity: 0, ease: Power4.easeOut}, '-=0.7')
+                .to('#sec3-con-1', 0.7, {x: 0, opacity: 1, ease: Power4.easeOut}, '-=0.7');
+            tu4.set('#sec3-con-2', {x: -100, opacity: 0, ease: Power4.easeOut}, '-=0.7')
+                .to('#sec3-con-2', 0.7, {x: 0, opacity: 1, ease: Power4.easeOut}, '-=0.7');
+
+            animationTitile1(td5, tu5, '#sec4-ln-1', '#sec4-ln-2', '#sec4-ln-3', '#sec4-ln-4', '#sec4-ln-5', '#sec4-tlt', '#sec4-as')
+
+            td5.from('#sec4-con-1', 0.7, {x: 100, opacity: 0, ease: Power4.easeOut}, '-=0.7');
+            td5.from('#sec4-con-2', 0.7, {x: 100, opacity: 0, ease: Power4.easeOut}, '-=0.7');
+
+
+            tu5.set('#sec4-con-1', {x: 100, opacity: 0, ease: Power4.easeOut}, '-=0.7')
+                .to('#sec4-con-1', 0.7, {x: 0, opacity: 1, ease: Power4.easeOut}, '-=0.7');
+            tu5.set('#sec4-con-2', {x: 100, opacity: 0, ease: Power4.easeOut}, '-=0.7')
+                .to('#sec4-con-2', 0.7, {x: 0, opacity: 1, ease: Power4.easeOut}, '-=0.7');
+
+            animationTitile2(td6, tu6, '#sec5-ln-1', '#sec5-ln-2', '#sec5-ln-3', '#sec5-ln-4', '#sec5-ln-5', '#sec5-tlt')
+
+
+            animationTitile2(td7, tu7, '#sec6-ln-1', '#sec6-ln-2', '#sec6-ln-3', '#sec6-ln-4', '#sec6-ln-5', '#sec6-tlt')
+
+            td7.staggerFrom('.sec6-con', 0.7, {y: -50, opacity: 0, ease: Power4.easeOut}, 0.1, '-=0.5');
+
+            tu7.set('.sec6-con', {y: 50, opacity: 0, ease: Power4.easeOut}, 0.1)
+                .staggerTo('.sec6-con', 0.7, {y: 0, opacity: 1, ease: Power4.easeOut}, 0.1);
+
+
+            setInterval(function () {
+                setAnimation(td, tu);
+                topPanel();
+
+            }, 100);
+        }
     }
 
 
-    if (document.documentElement.clientWidth >= 1366 && document.documentElement.clientHeight >= 650 && md.mobile() != "iPad") {
+    // var arrow1 = new TimelineMax(),
+    //     arrow2 = new TimelineMax();
+    // arrow1.from(rule1, 1, { cssRule: { ease: Elastic.easeOut.config(2, 0.7), x: -5 } })
+    //     .to(rule1, 0.5, { cssRule: { x: -5 } });
+    // arrow2.from(rule2, 1, { cssRule: { ease: Elastic.easeOut.config(2, 0.7), x: 5 } })
+    //     .to(rule2, 0.5, { cssRule: { x: 5 } });
 
+    // arrow1.repeat(Infinity);
+    // arrow2.repeat(Infinity);
 
-
-
-        var td1 = new TimelineMax(),
-            td2 = new TimelineMax(),
-            td3 = new TimelineMax(),
-            td4 = new TimelineMax(),
-            td5 = new TimelineMax(),
-            td6 = new TimelineMax(),
-            td7 = new TimelineMax(),
-            td8 = new TimelineMax(),
-
-            tu1 = new TimelineMax(),
-            tu2 = new TimelineMax(),
-            tu3 = new TimelineMax(),
-            tu4 = new TimelineMax(),
-            tu5 = new TimelineMax(),
-            tu6 = new TimelineMax(),
-            tu7 = new TimelineMax(),
-            tu8 = new TimelineMax(),
-
-            td = [td1, td2, td3, td4, td5, td6, td7, td8],
-            tu = [tu1, tu2, tu3, tu4, tu5, tu6, td7, tu8];
-
-        td1.pause();
-        td2.pause();
-        td3.pause();
-        td4.pause();
-        td5.pause();
-        td6.pause();
-        td7.pause();
-        td8.pause();
-
-        tu1.pause();
-        tu2.pause();
-        tu3.pause();
-        tu4.pause();
-        tu5.pause();
-        tu6.pause();
-        tu7.pause();
-        tu8.pause();
-
-        // GREEN SOCKS FOR DOWN
-
-
-        // секция 1
-
-        animationTitile1(td1, tu1, '#hd-ln-1', '#hd-ln-2', '#hd-ln-3', '#hd-ln-4', '#hd-ln-5', '#hd-tlt', '#hd-as');
-        td1.from('.top-panel', 0.7, { y: -50, opacity: 0, ease: Power4.easeOut }, '-=0.7');
-
-        tu1.set('.top-panel', { y: -50, opacity: 0, ease: Power4.easeOut }, '-=0.7', 'hd-ln')
-            .to('.top-panel', 0.7, { y: 0, opacity: 1, ease: Power4.easeOut }, '-=0.7', 'hd-ln');
-
-
-        animationTitile2(td2, tu2, '#sec1-ln-1', '#sec1-ln-2', '#sec1-ln-3', '#sec1-ln-4', '#sec1-ln-5', '#sec1-tlt');
-        td2.from('#sec1-con', 0.7, { x: -100, opacity: 0, ease: Power4.easeOut }, '-=0.7');
-        tu2.set('#sec1-con', { x: -100, opacity: 0, ease: Power4.easeOut }, 'sec1-ln')
-            .to('#sec1-con', 0.7, { x: 0, opacity: 1, ease: Power4.easeOut }, 'sec1-ln');
-
-
-        td3.staggerFrom('#sec2-con1', 0.7, { y: -200, opacity: 0, ease: Power4.easeOut }, 0.1, 'sec2-con');
-        td3.staggerFrom('#sec2-con2', 0.7, { y: -200, opacity: 0, ease: Power4.easeOut }, 0.1, 'sec2-con');
-        td3.staggerFrom('#sec2-con3', 0.7, { y: -200, opacity: 0, ease: Power4.easeOut }, 0.1, 'sec2-con');
-
-        tu3.set('#sec2-con1', { y: -200, opacity: 0, ease: Power4.easeOut }, 0.1, 'sec2-con-up', '+=0.5')
-            .to('#sec2-con1', 0.7, { y: 0, opacity: 1, ease: Power4.easeOut }, 0.1, 'sec2-con-up', '+=0.5');
-        tu3.set('#sec2-con2', { y: -200, opacity: 0, ease: Power4.easeOut }, 0.1, 'sec2-con-up', '+=0.5')
-            .to('#sec2-con2', 0.7, { y: 0, opacity: 1, ease: Power4.easeOut }, 0.1, 'sec2-con-up', '+=0.5');
-        tu3.set('#sec2-con3', { y: -200, opacity: 0, ease: Power4.easeOut }, 0.1, 'sec2-con-up', '+=0.5')
-            .to('#sec2-con3', 0.7, { y: 0, opacity: 1, ease: Power4.easeOut }, 0.1, 'sec2-con-up', '+=0.5');
-
-        animationTitile1(td4, tu4, '#sec3-ln-1', '#sec3-ln-2', '#sec3-ln-3', '#sec3-ln-4', '#sec3-ln-5', '#sec3-tlt', '#sec3-as')
-
-        td4.from('#sec3-con-1', 0.7, { x: 100, opacity: 0, ease: Power4.easeOut }, '-=0.7');
-        td4.from('#sec3-con-2', 0.7, { x: 100, opacity: 0, ease: Power4.easeOut }, '-=0.7');
-
-
-        tu4.set('#sec3-con-1', { x: -100, opacity: 0, ease: Power4.easeOut }, '-=0.7')
-            .to('#sec3-con-1', 0.7, { x: 0, opacity: 1, ease: Power4.easeOut }, '-=0.7');
-        tu4.set('#sec3-con-2', { x: -100, opacity: 0, ease: Power4.easeOut }, '-=0.7')
-            .to('#sec3-con-2', 0.7, { x: 0, opacity: 1, ease: Power4.easeOut }, '-=0.7');
-
-        animationTitile1(td5, tu5, '#sec4-ln-1', '#sec4-ln-2', '#sec4-ln-3', '#sec4-ln-4', '#sec4-ln-5', '#sec4-tlt', '#sec4-as')
-
-        td5.from('#sec4-con-1', 0.7, { x: 100, opacity: 0, ease: Power4.easeOut }, '-=0.7');
-        td5.from('#sec4-con-2', 0.7, { x: 100, opacity: 0, ease: Power4.easeOut }, '-=0.7');
-
-
-        tu5.set('#sec4-con-1', { x: 100, opacity: 0, ease: Power4.easeOut }, '-=0.7')
-            .to('#sec4-con-1', 0.7, { x: 0, opacity: 1, ease: Power4.easeOut }, '-=0.7');
-        tu5.set('#sec4-con-2', { x: 100, opacity: 0, ease: Power4.easeOut }, '-=0.7')
-            .to('#sec4-con-2', 0.7, { x: 0, opacity: 1, ease: Power4.easeOut }, '-=0.7');
-
-        animationTitile2(td6, tu6, '#sec5-ln-1', '#sec5-ln-2', '#sec5-ln-3', '#sec5-ln-4', '#sec5-ln-5', '#sec5-tlt')
-
-
-
-
-
-        animationTitile2(td7, tu7, '#sec6-ln-1', '#sec6-ln-2', '#sec6-ln-3', '#sec6-ln-4', '#sec6-ln-5', '#sec6-tlt')
-
-        td7.staggerFrom('.sec6-con', 0.7, { y: -50, opacity: 0, ease: Power4.easeOut }, 0.1, '-=0.5');
-
-        tu7.set('.sec6-con', { y: 50, opacity: 0, ease: Power4.easeOut }, 0.1)
-            .staggerTo('.sec6-con', 0.7, { y: 0, opacity: 1, ease: Power4.easeOut }, 0.1);
-
-
-
-
-
-
-        setInterval(function() {
-            setAnimation(td, tu);
-            topPanel();
-
-        }, 100);
-
-
-        // var arrow1 = new TimelineMax(),
-        //     arrow2 = new TimelineMax();
-        // arrow1.from(rule1, 1, { cssRule: { ease: Elastic.easeOut.config(2, 0.7), x: -5 } })
-        //     .to(rule1, 0.5, { cssRule: { x: -5 } });
-        // arrow2.from(rule2, 1, { cssRule: { ease: Elastic.easeOut.config(2, 0.7), x: 5 } })
-        //     .to(rule2, 0.5, { cssRule: { x: 5 } });
-
-        // arrow1.repeat(Infinity);
-        // arrow2.repeat(Infinity);
-    }
 
     // для инициализации tooltips
     // $( document ).tooltip({
     //   track: true
     // });  
     // скролл по ссылке с атрибутом href 
-    $(".mobile-menu a[href*='#']").on("click", function(e) {
+    $(".mobile-menu a[href*='#']").on("click", function (e) {
         e.preventDefault();
         var anchor = $(this);
         $('html, body').stop().animate({
@@ -488,7 +490,6 @@ $(document).ready(function() {
     });
 
 
-
     // Кастомные кнопки управления слайдером
     // var owl = $('.owl-carousel');
     // owl.owlCarousel();
@@ -503,13 +504,13 @@ $(document).ready(function() {
     // });
 
     // Select в модальном окне
-    $(document).click(function() {
+    $(document).click(function () {
         $('.slct').removeClass('active');
         $('.slct_arrow').removeClass('active');
         $('.slct').parent().find('.drop').slideUp("fast");
 
     });
-    $('.slct').click(function() {
+    $('.slct').click(function () {
         /* Заносим выпадающий список в переменную */
         var dropBlock = $(this).parent().find('.drop');
         //  закрываем все открытые
@@ -525,18 +526,18 @@ $(document).ready(function() {
 
 
             /* Работаем с событием клика по элементам выпадающего списка */
-            $('.drop').find('li').click(function() {
+            $('.drop').find('li').click(function () {
 
                 /* Заносим в переменную HTML код элемента 
-                списка по которому кликнули */
+                 списка по которому кликнули */
                 var selectResult = $(this).html();
 
                 /* Находим наш скрытый инпут и передаем в него 
-                значение из переменной selectResult */
+                 значение из переменной selectResult */
                 $(this).parent().parent().find('input').val(selectResult);
 
                 /* Передаем значение переменной selectResult в ссылку которая 
-                открывает наш выпадающий список и удаляем активность */
+                 открывает наш выпадающий список и удаляем активность */
                 $(this).parent().parent().find(".slct").removeClass('active').html(selectResult);
                 $(".slct_arrow").removeClass('active');
 
@@ -555,7 +556,7 @@ $(document).ready(function() {
         return false;
     });
     // Открываем модальное окно  
-    $(".modal").click(function(e) {
+    $(".modal").click(function (e) {
         e.preventDefault();
         var id = $(this).data('modal');
         var txt = $(this).data('info');
@@ -568,26 +569,26 @@ $(document).ready(function() {
         // $(".popup[data-modal="+id+"] h2").html(title); // прописать в ссылку data-title="нужный title"
 
         if (window.matchMedia("(min-width: 992px)").matches) {
-            $("body").css({ "overflow": "hidden" });
+            $("body").css({"overflow": "hidden"});
         }
         if (window.matchMedia("(max-width: 992px)").matches) {
 
-            $("body").css({ "overflow": "hidden" });
+            $("body").css({"overflow": "hidden"});
         }
     });
     // overlay для закрытия
-    $(".overlay").click(function() {
-        $(this).parent().toggle("drop", { direction: "up" }, 200);
-        $("body").css({ "overflow": "inherit" });
+    $(".overlay").click(function () {
+        $(this).parent().toggle("drop", {direction: "up"}, 200);
+        $("body").css({"overflow": "inherit"});
     });
     // закрываем модальное окно на крестик
-    $(".popup .close").click(function(e) {
+    $(".popup .close").click(function (e) {
         e.preventDefault();
-        $(this).parents(".popup").hide("drop", { direction: "up" }, 200);
-        $("body").css({ "overflow": "inherit" });
+        $(this).parents(".popup").hide("drop", {direction: "up"}, 200);
+        $("body").css({"overflow": "inherit"});
     });
     //обработчик кнопки на нажатие btn_mnu
-    $("#nav-button-label").click(function(e) {
+    $("#nav-button-label").click(function (e) {
         e.preventDefault();
         $(this).toggleClass('nav-on'); // добавляет класс для анимации самой кнопки
         $(this).next().slideToggle(); // открывает меню main_nav_block, которое было скрыто
@@ -595,7 +596,7 @@ $(document).ready(function() {
         $(".mnu_dropdown").toggleClass("active");
     });
     // Скрыть элемент при клике за его пределами бутерброд и его выпадающее меню
-    $(document).click(function(event) {
+    $(document).click(function (event) {
         if ($(event.target).closest("#nav-button-label").length)
             return;
         if ($(event.target).closest("[off-canvas]").length)
@@ -607,10 +608,10 @@ $(document).ready(function() {
 
     });
     //  Отправка форм
-    $("form:not('#form3')").submit(function() { // перехватываем все при событии отправки
+    $("form:not('#form3')").submit(function () { // перехватываем все при событии отправки
         var form = $(this); // запишем форму, чтобы потом не было проблем с this
         var error = [];
-        form.find('.modal_form_input').each(function() { // пробежим по каждому полю в форме
+        form.find('.modal_form_input').each(function () { // пробежим по каждому полю в форме
 
             if ($(this).val() == '') { // если находим пустое
                 $(this).siblings().show("fade", 500);
@@ -619,12 +620,12 @@ $(document).ready(function() {
                 $(this).siblings().hide("fade", 500)
                 error.push(false); // нет ошибки
             }
-            $(this).focus(function() {
+            $(this).focus(function () {
                 $(this).siblings().hide("fade", 500)
             });
 
         });
-        form.find('.modal_form_phone').each(function() { // пробежим по каждому полю в форме
+        form.find('.modal_form_phone').each(function () { // пробежим по каждому полю в форме
             var pattern = /^(\+|d+)*\d[\d\(\)\-]{4,14}\d$/;
             if ($(this).val() == '') { // если пустое
                 $(this).siblings().show("fade", 500);
@@ -641,12 +642,12 @@ $(document).ready(function() {
                     error.push(true); // ошибка  
                 }
             }
-            $(this).focus(function() {
+            $(this).focus(function () {
                 $(this).siblings().hide("fade", 500);
             });
 
         });
-        form.find('.modal_form_email').each(function() { // пробежим по каждому полю в форме
+        form.find('.modal_form_email').each(function () { // пробежим по каждому полю в форме
             var pattern = /^(([a-zA-Z0-9]|[!#$%\*\/\?\|^\{\}`~&'\+=-_])+\.)*([a-zA-Z0-9\-]|[!#$%\*\/\?\|^\{\}`~&'\+=-_])+@([a-zA-Z0-9-]+\.)+[a-zA-Z0-9-]+$/;
             if ($(this).val() == '') { // если пустое
                 $(this).siblings().show("fade", 500);
@@ -664,7 +665,7 @@ $(document).ready(function() {
                     error.push(true); // ошибка  
                 }
             }
-            $(this).focus(function() {
+            $(this).focus(function () {
                 $(this).siblings().hide("fade", 500);
             });
 
@@ -673,7 +674,8 @@ $(document).ready(function() {
         for (var i = 0; i < error.length; i++) {
             if (error[i] == false) {
                 erorr_finish = erorr_finish + 1;
-            };
+            }
+            ;
             // console.log(error[i]);
         }
         //console.log(erorr_finish);
@@ -685,10 +687,10 @@ $(document).ready(function() {
                 url: 'mail.php', // путь до обработчика, у нас он лежит в той же папке
                 dataType: 'json', // ответ ждем в json формате
                 data: data, // данные для отправки
-                beforeSend: function(data) { // событие до отправки
+                beforeSend: function (data) { // событие до отправки
                     form.find('input[type="submit"]').attr('disabled', 'disabled'); // например, отключим кнопку, чтобы не жали по 100 раз
                 },
-                success: function(data) { // событие после удачного обращения к серверу и получения ответа
+                success: function (data) { // событие после удачного обращения к серверу и получения ответа
                     if (data['error']) { // если обработчик вернул ошибку
                         alert(data['error']); // покажем её текст
                     } else { // если все прошло ок
@@ -700,7 +702,7 @@ $(document).ready(function() {
                             $('.dm-modal .close').hide();
                             form.trigger('reset');
                             $('.dm-modal .success_mail').addClass('active'); //пишем что всё ок
-                            setTimeout(function() {
+                            setTimeout(function () {
                                 form.parents('.popup').hide("fade", 500);
                                 $('.dm-modal .success_mail').removeClass('active');
                                 //$("body").css({ "overflow": "inherit", "padding-right": "0" });
@@ -711,7 +713,7 @@ $(document).ready(function() {
                             $('.dm-modal .success_mail').addClass('active');
                             $('.popup[data-modal=modal-res]').toggle("fade", 500);
                             //$("body").css({ "overflow": "hidden", "padding-right": "17px" });
-                            setTimeout(function() {
+                            setTimeout(function () {
                                 $('.popup[data-modal=modal-res]').hide("fade", 500);
                                 $('.dm-modal .success_mail').removeClass('active', 500);
                                 //$("body").css({ "overflow": "inherit", "padding-right": "0" });
@@ -719,11 +721,11 @@ $(document).ready(function() {
                         }
                     }
                 },
-                error: function(xhr, ajaxOptions, thrownError) { // в случае неудачного завершения запроса к серверу
+                error: function (xhr, ajaxOptions, thrownError) { // в случае неудачного завершения запроса к серверу
                     alert(xhr.status); // покажем ответ сервера
                     alert(thrownError); // и текст ошибки
                 },
-                complete: function(data) { // событие после любого исхода
+                complete: function (data) { // событие после любого исхода
                     form.find('input[type="submit"]').prop('disabled', false); // в любом случае включим кнопку обратно
                 }
 
@@ -732,18 +734,18 @@ $(document).ready(function() {
         return false; // вырубаем стандартную отправку формы
     });
     var files;
-    $('input[type=file]').change(function() {
+    $('input[type=file]').change(function () {
         files = this.files;
         //alert(files);
     });
 
     //  Отправка форм с файлом
-    $("#form3").on('submit', function(e) { // перехватываем все при событии отправки
+    $("#form3").on('submit', function (e) { // перехватываем все при событии отправки
         e.preventDefault();
         var $data = new FormData();
         var form = $(this);
         var error = [];
-        $.each(files, function(key, value) {
+        $.each(files, function (key, value) {
             if (!this.type.match(/(.png)|(.jpeg)|(.jpg)|(.gif)$/i) || (this.size / 1024).toFixed(0) > 1524) {
                 alert("Неправильный формат графического файла. Или слишком большой размер. Размер не должен превышать 1 мегабайт!");
                 return false;
@@ -755,13 +757,13 @@ $(document).ready(function() {
 
         $inputs = $("#form3").find('input[type=hidden]');
         $textarea = $("#form3").find('textarea');
-        $.each($inputs, function(key, value) {
+        $.each($inputs, function (key, value) {
             $data.append($(this).attr('name'), $(this).val());
         });
 
         $data.append($textarea.attr('name'), $textarea.val());
 
-        form.find('.modal_form_input').each(function() { // пробежим по каждому полю в форме
+        form.find('.modal_form_input').each(function () { // пробежим по каждому полю в форме
 
             if ($(this).val() == '') { // если находим пустое
                 $(this).siblings().show("fade", 500);
@@ -770,12 +772,12 @@ $(document).ready(function() {
                 $(this).siblings().hide("fade", 500)
                 error.push(false); // нет ошибки
             }
-            $(this).focus(function() {
+            $(this).focus(function () {
                 $(this).siblings().hide("fade", 500)
             });
 
         });
-        form.find('.modal_form_phone').each(function() { // пробежим по каждому полю в форме
+        form.find('.modal_form_phone').each(function () { // пробежим по каждому полю в форме
             var pattern = /^(\+|d+)*\d[\d\(\)\-]{4,14}\d$/;
             if ($(this).val() == '') { // если пустое
                 $(this).siblings().show("fade", 500);
@@ -792,12 +794,12 @@ $(document).ready(function() {
                     error.push(true); // ошибка  
                 }
             }
-            $(this).focus(function() {
+            $(this).focus(function () {
                 $(this).siblings().hide("fade", 500);
             });
 
         });
-        form.find('.modal_form_email').each(function() { // пробежим по каждому полю в форме
+        form.find('.modal_form_email').each(function () { // пробежим по каждому полю в форме
             var pattern = /^(([a-zA-Z0-9]|[!#$%\*\/\?\|^\{\}`~&'\+=-_])+\.)*([a-zA-Z0-9]|[!#$%\*\/\?\|^\{\}`~&'\+=-_])+@([a-zA-Z0-9-]+\.)+[a-zA-Z0-9-]+$/;
             if ($(this).val() == '') { // если пустое
                 $(this).siblings().show("fade", 500);
@@ -815,7 +817,7 @@ $(document).ready(function() {
                     error.push(true); // ошибка  
                 }
             }
-            $(this).focus(function() {
+            $(this).focus(function () {
                 $(this).siblings().hide("fade", 500);
             });
 
@@ -847,16 +849,16 @@ $(document).ready(function() {
                 processData: false,
                 dataType: 'json',
                 data: $data,
-                beforeSend: function(loading) {
+                beforeSend: function (loading) {
                     $('.fileLoad input').val('Файл загружается');
                 },
-                success: function(data) {
+                success: function (data) {
                     $('.dm-modal .sucess_mail').show('fade', 500);
                     $('.popup2 .close').hide();
                     $('.fileLoad input').val('Файл загружен!');
                     $('.file-load-block input[type=text]').css('color', '#b2d04e');
                     $('.popup2').show().delay(2000).fadeOut(
-                        function() {
+                        function () {
                             $('.popup2').removeClass('active');
                             form.trigger('reset');
                             $('.dm-modal .sucess_mail').addClass('active');
@@ -868,7 +870,6 @@ $(document).ready(function() {
                             $('.file-load-block input[type=text]').css('border', '1px solid #fff');
                         }
                     );
-
 
 
                 }

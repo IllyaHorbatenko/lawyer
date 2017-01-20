@@ -170,7 +170,7 @@
 		.footer-row
 			padding: 15px 0 0
 
-@media only screen and (max-width: 1366px)
+@media only screen and (max-width: 1365px)
 	.mobile-intent
 		padding-top: 10px
 	.title-2
@@ -193,15 +193,20 @@
 		.service_2,
 		.service_3
 			min-height: 650px
+	
+
+@media only screen and (max-height: 649px), (max-width: 1365px)
+	.fp-tableCell,
+	.fp-section
+		height: auto !important
 	.fp-tableCell,
 	.fp-section
 		height: auto !important
 
-@media only screen and (max-height: 650px)
-	.fp-tableCell,
-	.fp-section
-		height: auto !important
+@media only screen and (max-width: 1206px)
 
+	.col-wrap
+		display: inline-block
 @media only screen and (max-width: 1200px)
 
 	/**/
@@ -334,10 +339,11 @@
 				font-size: 60px
 		.slider
 			.owl-controls
-				left: 0
+				left: 229px
 				top: -66px
 			.owl-title
 				margin-bottom: 85px
+				text-align: center
 				h2
 					float: none
 
@@ -625,7 +631,7 @@
 			margin-bottom: 40px
 	.footer
 		.aside
-			margin-bottom: 90px
+			margin-bottom: 30px
 @media only screen and (max-width: 520px)
 	/**/
 		
@@ -663,6 +669,11 @@
 		min-height: 850px
 		.title-container
 			padding: 0
+	.header 
+		.wrap-position
+			top: calc(50% - 357px)
+		.wrap-container
+			min-height: 894px
 @media only screen and (max-width: 460px)
 	.header
 		.slider

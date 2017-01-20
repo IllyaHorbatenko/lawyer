@@ -598,17 +598,27 @@ body textarea:required:valid
 				&:hover,
 				&:focus
 					text-decoration: none
-			.links
-				margin-top: 20px
-				.icon
-					display: inline-block
-					margin-right: 35px
-					&.in
-						@include sprite($icon-linked-in)
-					&.fb
-						@include sprite($icon-fb)
-					&.insta
-						@include sprite($icon-insta)
+		.links
+			margin-top: 20px
+			a
+				&:hover
+					text-decoration: none
+			.icon
+				display: inline-block
+				margin-right: 35px
+				&.in
+					@include sprite($icon-linked-in)
+					&:hover
+						@include sprite($icon-linked-in-hv)
+				&.fb
+					@include sprite($icon-fb)
+					&:hover
+						@include sprite($icon-fb-hv)
+				&.insta
+					@include sprite($icon-insta)
+					&:hover
+						@include sprite($icon-insta-hv)
+
 	.photo-person
 		width: 50%
 		height: 100vh
@@ -835,15 +845,27 @@ body textarea:required:valid
 					@include sprite($icon-2)
 		.links
 			margin-top: 52px
+			a
+				&:hover
+					text-decoration: none
 			.icon
 				display: inline-block
 				margin-right: 29px
 				&.in
 					@include sprite($icon-linked-in)
+					&:hover
+						text-decoration: none
+						@include sprite($icon-linked-in-hv)
 				&.fb
 					@include sprite($icon-fb)
+					&:hover
+						@include sprite($icon-fb-hv)
+						text-decoration: none
 				&.insta
 					@include sprite($icon-insta)
+					&:hover
+						@include sprite($icon-insta-hv)
+						text-decoration: none
 
 	.footer-row
 		padding-top: 50px
@@ -976,8 +998,6 @@ body textarea:required:valid
 
 
 
-.col-wrap
-	display: inline-block
 
 //ALWAYS END
 @import "media"

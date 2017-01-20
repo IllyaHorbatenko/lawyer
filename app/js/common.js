@@ -106,7 +106,7 @@ $(window).resize(function () {
     } else if ($('.main').hasClass('fullpage-wrapper') == false && document.documentElement.clientWidth >= 1366) {
         $('.title-2').css('padding', "40px");
         $('.comments-section .intent').css('padding-bottom', "40px");
-        console.log('1');
+
     } else if (document.documentElement.clientWidth < 1366) {
         $('.title-2').css('padding', "");
         $('.comments-section .intent').css('padding-bottom', "");
@@ -291,8 +291,9 @@ $(document).ready(function () {
         'Mozilla/5.0 (Linux; U; Android 4.0.3; en-in; SonyEricssonMT11i' +
         ' Build/4.1.A.0.562) AppleWebKit/534.30 (KHTML, like Gecko)' +
         ' Version/4.0 Mobile Safari/534.30');
-
-    if (document.documentElement.clientWidth >= 1366 && document.documentElement.clientHeight >= 650 && md.mobile() == null) {
+// && md.mobile() != 'null'
+        console.log(document.documentElement.clientWidth);
+    if (document.documentElement.clientWidth >= 1350 && document.documentElement.clientHeight >= 640 ) {
         anim();
         $('.main').fullpage({
             anchors: ['1', '2', '3', '4', '5', '6', '7', '8'],
@@ -300,8 +301,8 @@ $(document).ready(function () {
             css3: true,
             navigation: true,
             responsiveSlides: true,
-            responsiveWidth: 1366,
-            responsiveHeight: 650,
+            responsiveWidth: 1350,
+            responsiveHeight: 640,
             afterResponsive: function (isResponsive) {
                 if (isResponsive == true) {
                     $.fn.fullpage.setResponsive(true);
@@ -399,23 +400,29 @@ $(document).ready(function () {
 
             td4.from('#sec3-con-1', 0.7, {x: 100, opacity: 0, ease: Power4.easeOut}, '-=0.7');
             td4.from('#sec3-con-2', 0.7, {x: 100, opacity: 0, ease: Power4.easeOut}, '-=0.7');
+            td4.from('#sec3-con-3', 0.7, {x: 100, opacity: 0, ease: Power4.easeOut}, '-=0.7');
 
 
             tu4.set('#sec3-con-1', {x: -100, opacity: 0, ease: Power4.easeOut}, '-=0.7')
                 .to('#sec3-con-1', 0.7, {x: 0, opacity: 1, ease: Power4.easeOut}, '-=0.7');
             tu4.set('#sec3-con-2', {x: -100, opacity: 0, ease: Power4.easeOut}, '-=0.7')
                 .to('#sec3-con-2', 0.7, {x: 0, opacity: 1, ease: Power4.easeOut}, '-=0.7');
+            tu4.set('#sec3-con-3', {x: -100, opacity: 0, ease: Power4.easeOut}, '-=0.7')
+                .to('#sec3-con-3', 0.7, {x: 0, opacity: 1, ease: Power4.easeOut}, '-=0.7');
 
             animationTitile1(td5, tu5, '#sec4-ln-1', '#sec4-ln-2', '#sec4-ln-3', '#sec4-ln-4', '#sec4-ln-5', '#sec4-tlt', '#sec4-as')
 
             td5.from('#sec4-con-1', 0.7, {x: 100, opacity: 0, ease: Power4.easeOut}, '-=0.7');
             td5.from('#sec4-con-2', 0.7, {x: 100, opacity: 0, ease: Power4.easeOut}, '-=0.7');
+            td5.from('#sec4-con-3', 0.7, {x: 100, opacity: 0, ease: Power4.easeOut}, '-=0.7');
 
 
             tu5.set('#sec4-con-1', {x: 100, opacity: 0, ease: Power4.easeOut}, '-=0.7')
                 .to('#sec4-con-1', 0.7, {x: 0, opacity: 1, ease: Power4.easeOut}, '-=0.7');
             tu5.set('#sec4-con-2', {x: 100, opacity: 0, ease: Power4.easeOut}, '-=0.7')
                 .to('#sec4-con-2', 0.7, {x: 0, opacity: 1, ease: Power4.easeOut}, '-=0.7');
+            tu5.set('#sec4-con-3', {x: 100, opacity: 0, ease: Power4.easeOut}, '-=0.7')
+                .to('#sec4-con-3', 0.7, {x: 0, opacity: 1, ease: Power4.easeOut}, '-=0.7');
 
             animationTitile2(td6, tu6, '#sec5-ln-1', '#sec5-ln-2', '#sec5-ln-3', '#sec5-ln-4', '#sec5-ln-5', '#sec5-tlt')
 
